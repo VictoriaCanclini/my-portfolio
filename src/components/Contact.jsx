@@ -1,14 +1,13 @@
 const Contact = () => {
   return (
     <div className="contact-container">
-      <h2>Get In Touch</h2>
+      <h2>Contacto</h2>
       <p>
-        If you want us to work together, have any questions or want me to speak
-        at your event, my inbox is always open. Whether I just want to say hi,
-        I'll try my best to get back to you! Cheers!
+        No dudes en conectarte conmigo a vikicanclini@gmail.com 📩. Estoy
+        emocionada por lo que depara el futuro en el mundo de la tecnología! 🙌
       </p>
       <a href="mailto:example@kinsta.com" className="cta-btn">
-        Say Hello
+        Enviar mensaje
       </a>
     </div>
   );

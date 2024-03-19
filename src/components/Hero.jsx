@@ -11,12 +11,8 @@ const Hero = () => {
         alt="Joe's personal headshot"
       />
       <div className="hero-text">
-        <h1>Hey, I'm Joe 👋</h1>
-        <p>
-          I'm a software developer based in Lagos, Nigeria. I specialize in
-          building (and occasionally designing) exceptional websites,
-          applications, and everything in between.
-        </p>
+        <h1>Hola! soy Victoria 👋</h1>
+        <p>Soy una desalloradora web Full Stack y Contadora pública</p>
         <div className="social-icons">
           <a
             href="https://twitter.com/olawanle_joel"
