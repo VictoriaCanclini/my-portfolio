@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import _document from "../app/_document";
 
 const Hero = () => {
   return (
@@ -12,7 +15,7 @@ const Hero = () => {
       />
       <div className="hero-text">
         <h1>Hola! soy Victoria 👋</h1>
-        <p>Soy una desalloradora web Full Stack y Contadora pública</p>
+        <p>Una desalloradora web Full Stack y Contadora pública.</p>
         <div className="social-icons">
           <a
             href="https://twitter.com/olawanle_joel"
