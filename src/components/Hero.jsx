@@ -1,10 +1,23 @@
-const Footer = () => {
+import Image from "next/image";
+
+const Hero = () => {
   return (
-    <>
-      <hr />
-      <div className="footer-container">
-        <p>© {new Date().getFullYear()} Victoria Portfolio</p>
-        <div className="social_icons">
+    <div className="hero-container">
+      <Image
+        src="/images/profile.jpeg"
+        className="profile-img"
+        width={300}
+        height={300}
+        alt="Joe's personal headshot"
+      />
+      <div className="hero-text">
+        <h1>Hey, I'm Joe 👋</h1>
+        <p>
+          I'm a software developer based in Lagos, Nigeria. I specialize in
+          building (and occasionally designing) exceptional websites,
+          applications, and everything in between.
+        </p>
+        <div className="social-icons">
           <a
             href="https://twitter.com/olawanle_joel"
             aria-label="Twitter"
@@ -31,8 +44,8 @@ const Footer = () => {
           </a>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
-export default Footer;
+export default Hero;
