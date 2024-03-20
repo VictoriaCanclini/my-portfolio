@@ -7,20 +7,25 @@ const About = () => {
       <div className="flex-about">
         <div className="about-text">
           <p>
-            Soy Victoria Canclini, una desarrolladora Full Stack para
-            aplicaciones web. Inicialmente comencé mi carrera como Contadora
-            pública, pero mi búsqueda de desafíos y mi deseo de crecimiento
-            profesional me llevaron a descubrir el fascinante mundo de la
-            tecnología. Me motiva mucho desarrollar mis habilidades y crecer
-            profesionalmente. Estoy en constante búsqueda de oportunidades para
-            colaborar con nuevos equipos y adquirir experiencia en las últimas
-            tecnologías. Cada desafío es una oportunidad para aprender y estoy
-            decidida a enfrentarlos con entusiasmo y determinación.
+            Inicialmente comencé mi carrera como Contadora pública, pero mi
+            búsqueda de desafíos y mi deseo de crecimiento profesional me
+            llevaron a descubrir el fascinante mundo de la tecnología. Mi camino
+            en el mundo de la programación comienza de manera autodidacta, para
+            luego, con el fin de acelerar mi curva de aprendizaje inicié un
+            coding bootcamp en plataforma 5 intensivo Full Stack. Me motiva
+            mucho desarrollar mis habilidades y crecer profesionalmente. Estoy
+            en constante búsqueda de oportunidades para colaborar con nuevos
+            equipos y adquirir experiencia en las últimas tecnologías, tengo
+            sólidas aptitudes para la resolución de problemas, trabajo en
+            equipo, planificación y cumplimiento de objetivos producto de mis
+            años de experiencia como auditora en una big four. Cada desafío es
+            una oportunidad para aprender y estoy decidida a enfrentarlos con
+            entusiasmo y determinación.
           </p>
         </div>
         <div className="about-img">
           <Image
-            src="/images/vic.jpg"
+            src="/images/compu.jpeg"
             className="profile-img"
             width={300}
             height={500}

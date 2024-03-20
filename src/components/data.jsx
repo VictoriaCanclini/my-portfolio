@@ -1,37 +1,34 @@
 export const projectData = [
   {
     id: 1,
-    title: "Todo List App",
+    title: "BOX DELIVERY",
     description:
-      "A simple Todo List App built with JavaScript. All datas are stored in localstorage. It helps users check list out their plans and tick as they do them.",
-    gitHubLink: "https://github.com/olawanlejoel/Todo-List-App",
+      "Aplicación mobile de una empresa de logística de última milla que tiene cientos de repartidores que al inicio del día reciben x cantidad de paquetes cada uno y que deberán ir repartiendo a lo largo de la jornada.\nTecnologías: HTML - CSS - TypeScript - Node.js - Nest.js - MongoDB - Mongoose - React - Next.js - Redux - Tailwind - Docker - AWS - GitHub Actions - Figma - Trello",
+    gitHubLink:
+      "https://drive.google.com/file/d/1-JXRbz35e-1Ag4EnpI9rh4QFRqS7ecQj/view?usp=drive_link",
   },
   {
     id: 2,
-    title: "Books Library App",
+    title: "STUDIO BY M",
     description:
-      "A simple Book Library App built with JavaScript. It helps readers have a good list of books they are either currently reading or have finished reading.",
-    gitHubLink: "https://github.com/olawanlejoel/Book-Library",
+      "Aplicación mobile/web para la compra de cursos de UX/UI utilizando Mercado pago y PayPal.\nTecnologías: HTML - CSS - JavaScript - Node.js - Express - MongoDB - Mongoose - React - Next.js - Redux - Tailwind CSS - Mercado pago - PayPal - Figma - Trello",
+    gitHubLink:
+      "https://drive.google.com/file/d/1bZv23WhlXZ2N-GmYqR-RdRpUtDr1oo8C/view?usp=drive_link",
   },
   {
     id: 3,
-    title: "Quotes Generator",
+    title: "DEVBOOKS",
     description:
-      "Helps you generate quotes from about 1600 quotes written by different authors . Quotes are automatically copied to your clipboards.",
-    gitHubLink: "https://github.com/olawanlejoel/random-quote-generator",
+      "Aplicación web para adquirir libros de programación y tecnología. \nTecnologías: HTML - CSS - JavaScript - Node.js - Express - PostgreSQL - Sequelize - Context - React - Material UI",
+    gitHubLink:
+      "https://drive.google.com/file/d/1FDTm-7SWD_wi25ZOmx9v69kt7FuxiKIe/view?usp=drive_link",
   },
   {
     id: 4,
-    title: "Password Generator",
+    title: "TMDB",
     description:
-      "Helps you generates random passwords, you can select what you want your password to entail and also you can copy generated password to clipboard.",
-    gitHubLink: "https://github.com/olawanlejoel/Password-Generator",
-  },
-  {
-    id: 5,
-    title: "Twitter UI Clone",
-    description:
-      "Simple Twitter UI clone built with TailwindCSS and Vue Js. This covers only the homepage of Twitter UI. This is cool to get started with TailwindCSS as it helps understand basic concepts.",
-    gitHubLink: "https://github.com/olawanlejoel/TwitterUI-clone",
+      "Aplicación web que contiene películas y series utilizando una API externa, donde se puede agregar y eliminar en una lista de favoritos las películas que son de tu interés.\nTecnologías: HTML - CSS - JavaScript - Node.js - Express - PostgreSQL - Sequelize - Context - React - Bulma CSS ",
+    gitHubLink:
+      "https://drive.google.com/file/d/1K529CsTpntmZiSXOqADjzd-m3IMDNiAp/view?usp=drive_link",
   },
 ];

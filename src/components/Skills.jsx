@@ -71,10 +71,6 @@ const Skills = () => {
           <i className="fa-brands fa-python python-icon"></i>
           <p>Trello</p>
         </div>
-        <div className="skill-card Nest.js">
-          <i className="fa-brands fa-python python-icon"></i>
-          <p>Nest.js</p>
-        </div>
       </div>
     </div>
   );
