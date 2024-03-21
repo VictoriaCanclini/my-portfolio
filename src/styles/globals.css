@@ -269,28 +269,8 @@ hr {
   font-size: 1.5rem;
 }
 
-.skills-container .grid-skills .html:hover {
-  background-color: #e34f26;
-}
-
-.skills-container .grid-skills .css:hover {
-  background-color: #264de4;
-}
-
-.skills-container .grid-skills .js:hover {
-  background-color: #f7df1e;
-}
-
-.skills-container .grid-skills .react:hover {
-  background-color: #61dafb;
-}
-
-.skills-container .grid-skills .node:hover {
-  background-color: #339933;
-}
-
-.skills-container .grid-skills .python:hover {
-  background-color: #3776ab;
+.skills-container .grid-skills .global:hover {
+  background-color: #c9a4e8;
 }
 
 /* Projects */

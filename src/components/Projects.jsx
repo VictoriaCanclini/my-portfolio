@@ -1,3 +1,4 @@
+import { Download, Folder } from "@/common/icons";
 import { projectData } from "./data";
 
 const Projects = () => {
@@ -9,10 +10,10 @@ const Projects = () => {
           projectData.map((project) => (
             <div className="project-card" key={project.id}>
               <div className="project-header">
-                <i className="fa-regular fa-folder-open folder-icon"></i>
+                <Folder color="#c9a4e8" />
                 <div className="small-icons">
-                  <a href={project.gitHubLink}>
-                    <i className="fa-brands fa-github"></i>
+                  <a href={project.gitHubLink} target="_blank">
+                    <Download color="#c9a4e8" />
                   </a>
                 </div>
               </div>

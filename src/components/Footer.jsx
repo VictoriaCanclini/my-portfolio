@@ -1,3 +1,12 @@
+import {
+  Discord,
+  Facebook,
+  GitHub,
+  Instagram,
+  LinkedIn,
+  Twitter,
+} from "@/common/icons";
+
 const Footer = () => {
   return (
     <>
@@ -11,7 +20,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa-brands fa-twitter"></i>
+            <Twitter />
           </a>
           <a
             href="https://github.com/VictoriaCanclini"
@@ -19,7 +28,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa-brands fa-github"></i>
+            <GitHub />
           </a>
           <a
             href="http://www.linkedin.com/in/victoriacanclini"
@@ -27,7 +36,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa-brands fa-linkedin"></i>
+            <LinkedIn />
           </a>
           <a
             href="https://www.instagram.com/victoria.canclini"
@@ -35,7 +44,15 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa-brands fa-linkedin"></i>
+            <Instagram />
+          </a>
+          <a
+            href=""
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Facebook />
           </a>
           <a
             href="https://discord.com/users/victoriacanclini0753"
@@ -43,7 +60,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa-brands fa-linkedin"></i>
+            <Discord />
           </a>
         </div>
       </div>

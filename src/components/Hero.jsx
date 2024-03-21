@@ -1,7 +1,5 @@
-"use client";
-
 import Image from "next/image";
-import _document from "next/document";
+import { Twitter, GitHub, LinkedIn } from "@/common/icons";
 
 const Hero = () => {
   return (
@@ -23,7 +21,8 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa-brands fa-twitter"></i>
+            <Twitter color="#808080" />
+            {/* <i className="fa-brands fa-twitter"></i> */}
           </a>
           <a
             href="https://github.com/VictoriaCanclini"
@@ -31,7 +30,8 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa-brands fa-github"></i>
+            <GitHub color="#808080" />
+            {/* <i className="fa-brands fa-github"></i> */}
           </a>
           <a
             href="http://www.linkedin.com/in/victoriacanclini"
@@ -39,7 +39,8 @@ const Hero = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fa-brands fa-linkedin"></i>
+            <LinkedIn color="#808080" />
+            {/* <i className="fa-brands fa-linkedin"></i> */}
           </a>
         </div>
       </div>

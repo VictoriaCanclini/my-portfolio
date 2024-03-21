@@ -1,17 +1,20 @@
+import { Download } from "@/common/icons";
 import Link from "next/link";
 
 const Navbar = () => {
   return (
     <div className="nav-container">
-      <div className="logo">
-        <Link href="/">Portfolio de Victoria</Link>
+      <div className="logo text-[#c9a4e8]">
+        <Link href="/" className="text-[#c9a4e8]">
+          Portfolio VC
+        </Link>
       </div>
       <a
         href="https://drive.google.com/file/d/12DF7E6KQDnzHYsbcTeZAoZx0zkoK_isO/view?usp=drive_link"
         className="cta-btn"
         target="_blank"
       >
-        CV
+        <Download />
       </a>
     </div>
   );
