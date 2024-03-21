@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import _document from "../app/_document";
+import _document from "next/document";
 
 const Hero = () => {
   return (
@@ -18,7 +18,7 @@ const Hero = () => {
         <p>Una desalloradora web Full Stack y Contadora pública.</p>
         <div className="social-icons">
           <a
-            href="https://twitter.com/olawanle_joel"
+            href="https://twitter.com/vikicanclini"
             aria-label="Twitter"
             target="_blank"
             rel="noopener noreferrer"
@@ -26,7 +26,7 @@ const Hero = () => {
             <i className="fa-brands fa-twitter"></i>
           </a>
           <a
-            href="https://github.com/olawanlejoel"
+            href="https://github.com/VictoriaCanclini"
             aria-label="GitHub"
             target="_blank"
             rel="noopener noreferrer"
@@ -34,7 +34,7 @@ const Hero = () => {
             <i className="fa-brands fa-github"></i>
           </a>
           <a
-            href="https://www.linkedin.com/in/olawanlejoel/"
+            href="http://www.linkedin.com/in/victoriacanclini"
             aria-label="LinkedIn"
             target="_blank"
             rel="noopener noreferrer"

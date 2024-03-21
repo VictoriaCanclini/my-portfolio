@@ -1,20 +1,14 @@
-"use client";
+// import Navbar from "./Navbar";
+// import Footer from "./Footer";
 
-import Navbar from "./navbar";
-import Footer from "./footer";
-import { usePathname } from "next/navigation";
+// const Layout = ({ children }) => {
+//   return (
+//     <>
+//       <Navbar />
+//       <main>{children}</main>
+//       <Footer />
+//     </>
+//   );
+// };
 
-const Layout = ({ children }) => {
-  const pathname = usePathname();
-  const home = pathname !== "/";
-
-  return (
-    <>
-      {home && <Navbar />}
-      <main>{children}</main>
-      <Footer />
-    </>
-  );
-};
-
-export default Layout;
+// export default Layout;
