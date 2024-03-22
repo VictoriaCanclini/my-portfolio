@@ -31,6 +31,16 @@ li {
   list-style: none;
 }
 
+.hidden-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: block;
+  }
+}
+
 /* Navbar */
 .nav-container {
   display: flex;

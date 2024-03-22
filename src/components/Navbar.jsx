@@ -6,7 +6,8 @@ const Navbar = () => {
     <div className="nav-container">
       <div className="logo text-[#c9a4e8]">
         <Link href="/" className="text-[#c9a4e8]">
-          Portfolio VC
+          <span className="hidden-mobile">Portfolio VC</span>
+          {/* <span className="sm: hidden">Portfolio Victoria Canclini</span> */}
         </Link>
       </div>
       <a
