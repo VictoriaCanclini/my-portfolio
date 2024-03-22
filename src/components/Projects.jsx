@@ -1,5 +1,6 @@
 import { Download, Folder } from "@/common/icons";
 import { projectData } from "./data";
+import Image from "next/image";
 
 const Projects = () => {
   return (
@@ -10,7 +11,14 @@ const Projects = () => {
           projectData.map((project) => (
             <div className="project-card" key={project.id}>
               <div className="project-header">
-                <Folder color="#c9a4e8" />
+                <Image
+                  src={project.imageSrc}
+                  className="profile-img"
+                  width={60}
+                  height={55}
+                  alt="Joe's personal headshot"
+                />
+                {/* <Folder color="#c9a4e8" /> */}
                 <div className="small-icons">
                   <a href={project.gitHubLink} target="_blank">
                     <Download color="#c9a4e8" />

@@ -110,7 +110,7 @@ export function Download({ color, width, height }) {
   );
 }
 
-export function HTML({ color, width, height }) {
+export function HTMLIcon({ color, width, height }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -127,7 +127,7 @@ export function HTML({ color, width, height }) {
   );
 }
 
-export function CSS({ color, width, height }) {
+export function CSSicon({ color, width, height }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -143,7 +143,7 @@ export function CSS({ color, width, height }) {
   );
 }
 
-export function JS({ color, width, height }) {
+export function JSicon({ color, width, height }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -159,7 +159,7 @@ export function JS({ color, width, height }) {
   );
 }
 
-export function React({ color, width, height }) {
+export function ReactIcon({ color, width, height }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -175,7 +175,7 @@ export function React({ color, width, height }) {
   );
 }
 
-export function Next({ color, width, height }) {
+export function NextIcon({ color, width, height }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -196,7 +196,7 @@ export function Next({ color, width, height }) {
   );
 }
 
-export function Node({ color, width, height }) {
+export function NodeIcon({ color, width, height }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -212,7 +212,7 @@ export function Node({ color, width, height }) {
   );
 }
 
-export function Express({ color, width, height }) {
+export function ExpressIcon({ color, width, height }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -228,7 +228,7 @@ export function Express({ color, width, height }) {
   );
 }
 
-export function PostgreSQL({ color, width, height }) {
+export function PostgreSQLicon({ color, width, height }) {
   return (
     <svg
       width={width || "25"}
@@ -254,7 +254,7 @@ export function PostgreSQL({ color, width, height }) {
   );
 }
 
-export function MongoDB({ width, height }) {
+export function MongoDBicon({ width, height }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -278,7 +278,7 @@ export function MongoDB({ width, height }) {
   );
 }
 
-export function Redux({ width, height }) {
+export function ReduxIcon({ width, height }) {
   return (
     <svg
       width={width || "25"}
@@ -295,7 +295,7 @@ export function Redux({ width, height }) {
   );
 }
 
-export function Tailwind({ width, height }) {
+export function TailwindIcon({ width, height }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -311,7 +311,7 @@ export function Tailwind({ width, height }) {
   );
 }
 
-export function Docker({ width, height }) {
+export function DockerIcon({ width, height }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -324,7 +324,7 @@ export function Docker({ width, height }) {
   );
 }
 
-export function Postman({ width, height }) {
+export function PostmanIcon({ width, height }) {
   return (
     <svg
       width={width || "25"}
@@ -337,7 +337,7 @@ export function Postman({ width, height }) {
   );
 }
 
-export function Trello({ width, height }) {
+export function TrelloIcon({ width, height }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -350,7 +350,7 @@ export function Trello({ width, height }) {
   );
 }
 
-export function Sequelize({ width, height }) {
+export function SequelizeIcon({ width, height }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
