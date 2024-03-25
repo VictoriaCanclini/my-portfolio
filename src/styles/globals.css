@@ -383,3 +383,17 @@ hr {
 .horizontal-list li {
   margin-right: 10px; /* Espacio entre elementos */
 }
+
+.vertical-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.vertical-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.vertical-list li {
+  margin-bottom: 10px; /* Espacio entre elementos */
+}
