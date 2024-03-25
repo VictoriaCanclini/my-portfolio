@@ -61,6 +61,12 @@ li {
   background-color: #dadadb;
 }
 
+/* .viki:hover {
+  background-color: #dadadb;
+  filter: grayscale(0%);
+  transform: scale(1.5);
+} */
+
 /* Footer */
 hr {
   border: none;
@@ -104,6 +110,8 @@ hr {
 
 .footer-container .social_icons a:hover {
   color: #dadadb;
+  filter: grayscale(0%);
+  transform: scale(1.5);
 }
 
 /* Hero */
@@ -164,6 +172,8 @@ hr {
 
 .hero-container .social-icons a:hover {
   color: #dadadb;
+  filter: grayscale(0%);
+  transform: scale(1.5);
 }
 
 /* About */
@@ -271,6 +281,8 @@ hr {
 
 .skills-container .grid-skills .global:hover {
   background-color: #c9a4e8;
+  filter: grayscale(0%);
+  transform: scale(1.08);
 }
 
 /* Projects */
@@ -327,6 +339,8 @@ hr {
 
 .project-card .small-icons a:hover {
   color: #ffcc17;
+  filter: grayscale(0%);
+  transform: scale(1.5);
 }
 
 .project-card .project h3 {

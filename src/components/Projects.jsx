@@ -18,7 +18,6 @@ const Projects = () => {
                   height={55}
                   alt="Joe's personal headshot"
                 />
-                {/* <Folder color="#c9a4e8" /> */}
                 <div className="small-icons">
                   <a href={project.gitHubLink} target="_blank">
                     <Download color="#c9a4e8" />

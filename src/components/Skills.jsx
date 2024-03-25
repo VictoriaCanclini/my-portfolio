@@ -17,19 +17,12 @@ import {
   TrelloIcon,
   SequelizeIcon,
 } from "../common/icons";
-// import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
     <div className="skills-container">
       <h2>Habilidades</h2>
       <div className="grid-skills">
-        {/* <motion.div
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6 }}
-          className="flex flex-col items-center md:hidden"
-        > */}
         <div className="skill-card global">
           <HTMLIcon />
           <p>HTML</p>

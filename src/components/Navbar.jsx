@@ -39,7 +39,7 @@ const Navbar = () => {
             href="https://drive.google.com/file/d/12DF7E6KQDnzHYsbcTeZAoZx0zkoK_isO/view?usp=drive_link"
             target="_blank"
           >
-            <li>
+            <li className="viki">
               <Download color="#c9a4e8" />
             </li>
           </a>
