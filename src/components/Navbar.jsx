@@ -15,12 +15,11 @@ const Navbar = () => {
 
   return (
     <div className="nav-container">
-      <div className="logo text-[#c9a4e8]">
-        <Link href="/" className="text-[#c9a4e8]">
-          <span className="text-[#c9a4e8]">Portfolio VC</span>
+      <div className="logo">
+        <Link href="/">
+          <span>Portfolio VC</span>
         </Link>
       </div>
-
       <div className="horizontal-list">
         <ul>
           <li>
