@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    console.log("hola");
+    console.log("asdfsadf");
     setIsMenuOpen(!isMenuOpen);
   };
 
@@ -22,9 +22,9 @@ const Navbar = () => {
       </div>
       <div className="horizontal-list">
         <ul>
-          <li>
-            <Link href="skills">Acerca de mi </Link>
-          </li>
+          <Link href="about">
+            <li>Acerca de mi</li>
+          </Link>
           <Link href="skills">
             <li>Habilidades</li>
           </Link>
@@ -45,9 +45,11 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* <button onClick={toggleMenu} className="cta-btn">
-        <Burguer />
-      </button>
+      <div className="cta-btn">
+        <button onClick={toggleMenu}>
+          <Burguer />
+        </button>
+      </div>
       {isMenuOpen && (
         <div className="vertical-list">
           <ul>
@@ -73,7 +75,7 @@ const Navbar = () => {
             </a>
           </ul>
         </div>
-      )} */}
+      )}
     </div>
   );
 };

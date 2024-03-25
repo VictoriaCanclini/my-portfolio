@@ -29,6 +29,7 @@ const About = () => {
             className="profile-img"
             width={300}
             height={500}
+            alt="perfil"
           />
         </div>
       </div>

@@ -9,7 +9,8 @@ const Hero = () => {
         className="profile-img"
         width={300}
         height={300}
-        alt="Joe's personal headshot"
+        alt="personal"
+        priority={true}
       />
       <div className="hero-text">
         <h1>Hola! soy Victoria 👋</h1>
@@ -22,7 +23,6 @@ const Hero = () => {
             rel="noopener noreferrer"
           >
             <Twitter color="#808080" />
-            {/* <i className="fa-brands fa-twitter"></i> */}
           </a>
           <a
             href="https://github.com/VictoriaCanclini"
@@ -31,7 +31,6 @@ const Hero = () => {
             rel="noopener noreferrer"
           >
             <GitHub color="#808080" />
-            {/* <i className="fa-brands fa-github"></i> */}
           </a>
           <a
             href="http://www.linkedin.com/in/victoriacanclini"
@@ -40,7 +39,6 @@ const Hero = () => {
             rel="noopener noreferrer"
           >
             <LinkedIn color="#808080" />
-            {/* <i className="fa-brands fa-linkedin"></i> */}
           </a>
         </div>
       </div>

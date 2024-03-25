@@ -16,7 +16,7 @@ const Projects = () => {
                   className="profile-img"
                   width={60}
                   height={55}
-                  alt="Joe's personal headshot"
+                  alt="personal"
                 />
                 <div className="small-icons">
                   <a href={project.gitHubLink} target="_blank">
