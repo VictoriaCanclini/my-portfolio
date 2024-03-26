@@ -3,80 +3,113 @@
 import { Burguer, Download } from "@/common/icons";
 import Link from "next/link";
 import "../styles/globals.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkWindowSize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkWindowSize();
+
+    window.addEventListener("resize", checkWindowSize);
+
+    return () => {
+      window.removeEventListener("resize", checkWindowSize);
+    };
+  }, []);
 
   const toggleMenu = () => {
-    console.log("asdfsadf");
     setIsMenuOpen(!isMenuOpen);
   };
 
-  return (
-    <div className="nav-container">
-      <div className="logo">
-        <Link href="/">
-          <span>Portfolio VC</span>
-        </Link>
-      </div>
-      <div className="horizontal-list">
-        <ul>
-          <Link href="about">
-            <li>Acerca de mi</li>
-          </Link>
-          <Link href="skills">
-            <li>Habilidades</li>
-          </Link>
-          <Link href="projects">
-            <li>Proyectos</li>
-          </Link>
-          <a href="mailto:vikicanclini@gmail.com">
-            <li>Contacto</li>
-          </a>
-          <a
-            href="https://drive.google.com/file/d/12DF7E6KQDnzHYsbcTeZAoZx0zkoK_isO/view?usp=drive_link"
-            target="_blank"
-          >
-            <li className="viki">
-              <Download color="#c9a4e8" />
-            </li>
-          </a>
-        </ul>
-      </div>
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
-      <div className="cta-btn">
-        <button onClick={toggleMenu}>
-          <Burguer />
-        </button>
-      </div>
-      {isMenuOpen && (
-        <div className="vertical-list">
-          <ul>
-            <li>
-              <Link href="skills">Acerca de mi </Link>
-            </li>
-            <Link href="skills">
-              <li>Habilidades</li>
+  return (
+    <>
+      {/* modo mobile */}
+      {isMobile ? (
+        <div className="nav-container">
+          <div className="logo">
+            <Link href="/">
+              <span>Portfolio VC</span>
             </Link>
-            <Link href="projects">
-              <li>Proyectos</li>
+          </div>
+          <div className="cta-btn">
+            <div onClick={toggleMenu}>
+              <Burguer />
+            </div>
+          </div>
+          {isMenuOpen && (
+            <div className="menu-container">
+              <div className="vertical-list">
+                <ul>
+                  <li onClick={closeMenu}>
+                    <Link href="about">Acerca de mi </Link>
+                  </li>
+                  <Link href="skills">
+                    <li onClick={closeMenu}>Habilidades</li>
+                  </Link>
+                  <Link href="projects">
+                    <li onClick={closeMenu}>Proyectos</li>
+                  </Link>
+                  <a href="mailto:vikicanclini@gmail.com">
+                    <li onClick={closeMenu}>Contacto</li>
+                  </a>
+                  <a
+                    href="https://drive.google.com/file/d/12DF7E6KQDnzHYsbcTeZAoZx0zkoK_isO/view?usp=drive_link"
+                    target="_blank"
+                  >
+                    <li onClick={closeMenu}>
+                      <Download color="#c9a4e8" />
+                    </li>
+                  </a>
+                </ul>
+              </div>
+            </div>
+          )}
+        </div>
+      ) : (
+        // modo Escritorio
+        <div className="nav-container">
+          <div className="logo">
+            <Link href="/">
+              <span>Portfolio Victoria Canclini</span>
             </Link>
-            <a href="mailto:vikicanclini@gmail.com">
-              <li>Contacto</li>
-            </a>
-            <a
-              href="https://drive.google.com/file/d/12DF7E6KQDnzHYsbcTeZAoZx0zkoK_isO/view?usp=drive_link"
-              target="_blank"
-            >
-              <li>
-                <Download color="#c9a4e8" />
-              </li>
-            </a>
-          </ul>
+          </div>
+          <div className="horizontal-list">
+            <ul>
+              <Link href="about">
+                <li>Acerca de mi</li>
+              </Link>
+              <Link href="skills">
+                <li>Habilidades</li>
+              </Link>
+              <Link href="projects">
+                <li>Proyectos</li>
+              </Link>
+              <a href="mailto:vikicanclini@gmail.com">
+                <li>Contacto</li>
+              </a>
+              <a
+                href="https://drive.google.com/file/d/12DF7E6KQDnzHYsbcTeZAoZx0zkoK_isO/view?usp=drive_link"
+                target="_blank"
+              >
+                <li className="viki">
+                  <Download color="#c9a4e8" />
+                </li>
+              </a>
+            </ul>
+          </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 

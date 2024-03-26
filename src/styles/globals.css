@@ -46,8 +46,8 @@ li {
 }
 
 .cta-btn {
-  background-color: #c9a4e8;
-  color: #1d1e20;
+  background-color: #1d1e20;
+  color: #c9a4e8;
   padding: 0.4rem;
   border-radius: 5px;
   font-size: 1rem;
@@ -58,14 +58,23 @@ li {
 }
 
 .cta-btn:hover {
-  background-color: #dadadb;
+  background-color: #58585f;
 }
 
-@media screen and (max-width: 768px) {
+.menu-container {
+  position: absolute;
+  top: 8%;
+  left: 95%; /* Centra horizontalmente */
+  transform: translateX(
+    -50%
+  ); /* Corrige la posición para centrar exactamente */
+}
+
+/* @media screen and (max-width: 768px) {
   .nav-container .logo {
     font-size: 1.2rem;
   }
-}
+} */
 
 /* Footer */
 hr {
