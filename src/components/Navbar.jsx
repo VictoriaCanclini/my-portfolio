@@ -55,7 +55,7 @@ const Navbar = () => {
               <div className="vertical-list">
                 <ul>
                   <li onClick={closeMenu}>
-                    <Link href="about">Acerca de mi</Link>
+                    <Link href="about">Acerca de mí</Link>
                   </li>
                   <Link href="skills">
                     <li onClick={closeMenu}>Habilidades</li>
@@ -87,10 +87,10 @@ const Navbar = () => {
               <span>Victoria Canclini</span>
             </Link>
           </div>
-          <div className="horizontal-list">
+          <div className="horizontal-list logo">
             <ul>
               <Link href="about">
-                <li>Acerca de mi</li>
+                <li>Acerca de mí</li>
               </Link>
               <Link href="skills">
                 <li>Habilidades</li>

@@ -3,7 +3,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <div className="about-container">
-      <h2>Acerca de mi</h2>
+      <h2>Acerca de mí</h2>
       <div className="flex-about">
         <div className="about-text">
           <p>
@@ -12,9 +12,9 @@ const About = () => {
             llevaron a descubrir el fascinante mundo de la tecnología. Mi camino
             en el mundo de la programación comienza de manera autodidacta, para
             luego, con el fin de acelerar mi curva de aprendizaje inicié un
-            coding bootcamp en plataforma 5 intensivo Full Stack. Me motiva
-            mucho desarrollar mis habilidades y crecer profesionalmente. Estoy
-            en constante búsqueda de oportunidades para colaborar con nuevos
+            coding bootcamp en plataforma 5 Full Stack. Me motiva mucho
+            desarrollar mis habilidades y crecer profesionalmente. Estoy en
+            constante búsqueda de oportunidades para colaborar con nuevos
             equipos y adquirir experiencia en las últimas tecnologías, tengo
             sólidas aptitudes para la resolución de problemas, trabajo en
             equipo, planificación y cumplimiento de objetivos producto de mis
