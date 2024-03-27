@@ -70,6 +70,39 @@ li {
   text-align: center;
 }
 
+/* Navbar mobile */
+
+.horizontal-list {
+  display: flex;
+}
+
+.horizontal-list ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.horizontal-list li {
+  margin-right: 10px; /* Espacio entre elementos */
+}
+
+.vertical-list {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(80, 80, 80, 0.2); /* Gris con 50% de opacidad */
+  padding: 10px; /* Ajusta el relleno según sea necesario */
+  border-radius: 8px;
+}
+
+.vertical-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.vertical-list li {
+  margin-bottom: 4px; /* Espacio entre elementos */
+}
+
 /* Footer */
 hr {
   border: none;
@@ -372,6 +405,7 @@ hr {
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
+  gap: 0.5rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -394,33 +428,8 @@ hr {
   text-align: center;
 }
 
-.horizontal-list {
+.contact-container > div {
   display: flex;
-}
-
-.horizontal-list ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-}
-
-.horizontal-list li {
-  margin-right: 10px; /* Espacio entre elementos */
-}
-
-.vertical-list {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(80, 80, 80, 0.2); /* Gris con 50% de opacidad */
-  padding: 10px; /* Ajusta el relleno según sea necesario */
-  border-radius: 8px;
-}
-
-.vertical-list ul {
-  list-style: none;
-  padding: 0;
-}
-
-.vertical-list li {
-  margin-bottom: 4px; /* Espacio entre elementos */
+  align-items: center;
+  gap: 0.5rem; /* Ajusta el valor según desees */
 }

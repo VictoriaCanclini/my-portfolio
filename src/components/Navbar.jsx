@@ -63,9 +63,9 @@ const Navbar = () => {
                   <Link href="projects">
                     <li onClick={closeMenu}>Proyectos</li>
                   </Link>
-                  <a href="mailto:vikicanclini@gmail.com">
+                  <Link href="contact">
                     <li onClick={closeMenu}>Contacto</li>
-                  </a>
+                  </Link>
                   <a
                     href="https://drive.google.com/file/d/12DF7E6KQDnzHYsbcTeZAoZx0zkoK_isO/view?usp=drive_link"
                     target="_blank"
@@ -98,9 +98,9 @@ const Navbar = () => {
               <Link href="projects">
                 <li>Proyectos</li>
               </Link>
-              <a href="mailto:vikicanclini@gmail.com">
+              <Link href="contact">
                 <li>Contacto</li>
-              </a>
+              </Link>
               <a
                 href="https://drive.google.com/file/d/12DF7E6KQDnzHYsbcTeZAoZx0zkoK_isO/view?usp=drive_link"
                 target="_blank"
