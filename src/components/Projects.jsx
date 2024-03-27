@@ -1,4 +1,4 @@
-import { Download } from "@/common/icons";
+import { Download, GitHub } from "@/common/icons";
 import { projectData } from "./data";
 import Image from "next/image";
 
@@ -19,8 +19,11 @@ const Projects = () => {
                   alt="personal"
                 />
                 <div className="small-icons">
-                  <a href={project.gitHubLink} target="_blank">
+                  <a href={project.demoLink} target="_blank">
                     <Download color="#c9a4e8" />
+                  </a>
+                  <a href={project.gitHubLink} target="_blank">
+                    <GitHub color="#808080" />
                   </a>
                 </div>
               </div>

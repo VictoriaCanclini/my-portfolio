@@ -24,7 +24,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #dadadb;
+  color: #808080;
 }
 
 li {
@@ -57,24 +57,18 @@ li {
   display: inline-block;
 }
 
-.cta-btn:hover {
+/* .cta-btn:hover {
   background-color: #58585f;
-}
+} */
 
 .menu-container {
   position: absolute;
-  top: 8%;
-  left: 95%; /* Centra horizontalmente */
-  transform: translateX(
-    -50%
-  ); /* Corrige la posición para centrar exactamente */
+  top: 7%;
+  left: 87%; /* Centra horizontalmente */
+  transform: translateX(-55%);
+  width: 115px;
+  text-align: center;
 }
-
-/* @media screen and (max-width: 768px) {
-  .nav-container .logo {
-    font-size: 1.2rem;
-  }
-} */
 
 /* Footer */
 hr {
@@ -126,7 +120,7 @@ hr {
 /* Hero */
 
 .hero-container {
-  height: 90vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -146,6 +140,7 @@ hr {
   text-align: center;
   margin: 1rem 0;
   width: 80%;
+  color: #9b9c9d;
 }
 
 @media screen and (max-width: 768px) {
@@ -158,12 +153,14 @@ hr {
   font-size: 2.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: #9b9c9d;
 }
 
 .hero-container .hero-text p {
   font-size: 1.2rem;
   font-weight: 400;
   margin-bottom: 1rem;
+  color: #9b9c9d;
 }
 
 .hero-container .social-icons {
@@ -180,7 +177,7 @@ hr {
 }
 
 .hero-container .social-icons a:hover {
-  color: #dadadb;
+  color: #808080;
   filter: grayscale(0%);
   transform: scale(1.5);
 }
@@ -194,6 +191,7 @@ hr {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: #9b9c9d;
 }
 
 .about-container .flex-about {
@@ -256,6 +254,7 @@ hr {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: #9b9c9d;
 }
 
 .skills-container .grid-skills {
@@ -303,6 +302,7 @@ hr {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: #9b9c9d;
 }
 
 .projects-grid {
@@ -384,6 +384,7 @@ hr {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  color: #9b9c9d;
 }
 
 .contact-container p {
@@ -410,6 +411,9 @@ hr {
 .vertical-list {
   display: flex;
   flex-direction: column;
+  background-color: rgba(80, 80, 80, 0.2); /* Gris con 50% de opacidad */
+  padding: 10px; /* Ajusta el relleno según sea necesario */
+  border-radius: 8px;
 }
 
 .vertical-list ul {
@@ -418,5 +422,5 @@ hr {
 }
 
 .vertical-list li {
-  margin-bottom: 10px; /* Espacio entre elementos */
+  margin-bottom: 4px; /* Espacio entre elementos */
 }

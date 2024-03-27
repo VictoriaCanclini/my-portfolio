@@ -1,6 +1,6 @@
 "use client";
 
-import { Burguer, Download, Moon } from "@/common/icons";
+import { Burguer, Download, Moon, Sun } from "@/common/icons";
 import Link from "next/link";
 import "../styles/globals.css";
 import { useEffect, useState } from "react";
@@ -11,7 +11,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const checkWindowSize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth < 768);
     };
 
     checkWindowSize();
@@ -38,11 +38,12 @@ const Navbar = () => {
         <div className="nav-container">
           <div className="logo">
             <Link href="/">
-              <span>Portfolio VC</span>
+              <span>VC</span>
             </Link>
           </div>
           <div>
             <Moon color="#c9a4e8" />
+            {/* <Sun color="#c9a4e8" /> */}
           </div>
           <div className="cta-btn">
             <div onClick={toggleMenu}>
@@ -54,7 +55,7 @@ const Navbar = () => {
               <div className="vertical-list">
                 <ul>
                   <li onClick={closeMenu}>
-                    <Link href="about">Acerca de mi </Link>
+                    <Link href="about">Acerca de mi</Link>
                   </li>
                   <Link href="skills">
                     <li onClick={closeMenu}>Habilidades</li>
@@ -83,7 +84,7 @@ const Navbar = () => {
         <div className="nav-container">
           <div className="logo">
             <Link href="/">
-              <span>Portfolio Victoria Canclini</span>
+              <span>Victoria Canclini</span>
             </Link>
           </div>
           <div className="horizontal-list">
