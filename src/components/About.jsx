@@ -30,6 +30,7 @@ const About = () => {
             width={300}
             height={500}
             alt="personal"
+            priority={true}
           />
         </div>
       </div>

@@ -8,7 +8,7 @@ import { useTheme } from "next-themes";
 
 const Navbar = () => {
   const [mounted, setMounted] = useState(false);
-  const { resolvedTheme, theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -122,7 +122,11 @@ const Navbar = () => {
                   <Download color="#c9a4e8" />
                 </li>
               </a>
-              <li>
+              <li
+                onClick={() =>
+                  setTheme(resolvedTheme === "light" ? "dark" : "light")
+                }
+              >
                 <Moon color="#c9a4e8" />
               </li>
             </ul>
