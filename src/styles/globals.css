@@ -31,6 +31,18 @@ li {
   list-style: none;
 }
 
+/* Modo claro */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #f5f5f5;
+    color: #333333;
+  }
+
+  a {
+    color: #808080;
+  }
+}
+
 /* Navbar */
 .nav-container {
   display: flex;

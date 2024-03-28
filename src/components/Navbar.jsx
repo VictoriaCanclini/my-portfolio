@@ -1,11 +1,14 @@
 "use client";
 
-import { Burguer, Download, Moon, Sun } from "@/common/icons";
+import { Burguer, Download, Moon } from "@/common/icons";
 import Link from "next/link";
 import "../styles/globals.css";
 import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
+  const [mounted, setMounted] = useState(false);
+  const { resolvedTheme, theme, setTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -31,6 +34,12 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+
   return (
     <>
       {/* modo mobile */}
@@ -41,10 +50,7 @@ const Navbar = () => {
               <span>VC</span>
             </Link>
           </div>
-          <div>
-            <Moon color="#c9a4e8" />
-            {/* <Sun color="#c9a4e8" /> */}
-          </div>
+
           <div className="cta-btn">
             <div onClick={toggleMenu}>
               <Burguer />
@@ -74,6 +80,13 @@ const Navbar = () => {
                       <Download color="#c9a4e8" />
                     </li>
                   </a>
+                  <li
+                    onClick={() =>
+                      setTheme(resolvedTheme === "light" ? "dark" : "light")
+                    }
+                  >
+                    <Moon color="#c9a4e8" />
+                  </li>
                 </ul>
               </div>
             </div>
