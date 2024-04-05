@@ -4,11 +4,9 @@ import { Burguer, Download, Moon } from "@/common/icons";
 import Link from "next/link";
 import "../styles/globals.css";
 import { useEffect, useState } from "react";
-import { useTheme } from "next-themes";
+import { ThemeSwitcher } from "./themeSwitcher";
 
 const Navbar = () => {
-  const [mounted, setMounted] = useState(false);
-  const { resolvedTheme, setTheme } = useTheme();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -33,12 +31,6 @@ const Navbar = () => {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
 
   return (
     <>
@@ -80,12 +72,8 @@ const Navbar = () => {
                       <Download color="#c9a4e8" />
                     </li>
                   </a>
-                  <li
-                    onClick={() =>
-                      setTheme(resolvedTheme === "light" ? "dark" : "light")
-                    }
-                  >
-                    <Moon color="#c9a4e8" />
+                  <li>
+                    <ThemeSwitcher />
                   </li>
                 </ul>
               </div>
@@ -122,12 +110,8 @@ const Navbar = () => {
                   <Download color="#c9a4e8" />
                 </li>
               </a>
-              <li
-                onClick={() =>
-                  setTheme(resolvedTheme === "light" ? "dark" : "light")
-                }
-              >
-                <Moon color="#c9a4e8" />
+              <li>
+                <ThemeSwitcher />
               </li>
             </ul>
           </div>

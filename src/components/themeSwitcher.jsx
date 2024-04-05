@@ -2,6 +2,7 @@
 
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { Moon, Sun } from "../common/icons";
 
 export function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
@@ -13,11 +14,23 @@ export function ThemeSwitcher() {
 
   if (!mounted) return null;
 
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
-    <div>
-      The current theme is: {theme}
-      <button onClick={() => setTheme("light")}>Light Mode</button>
-      <button onClick={() => setTheme("dark")}>Dark Mode</button>
+    <div
+      onClick={toggleTheme}
+      style={{
+        cursor: "pointer",
+        // backgroundColor: resolvedTheme === "dark" ? "#333" : "#f0f0f0",
+      }}
+    >
+      {resolvedTheme === "dark" ? (
+        <Sun color="#c9a4e8" />
+      ) : (
+        <Moon color="#c9a4e8" />
+      )}
     </div>
   );
 }
