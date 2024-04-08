@@ -3,7 +3,7 @@ export const projectData = [
     id: 1,
     title: "PORTFOLIO",
     description:
-      "Mi Portfolio personal web/mobile donde conocerás un poco más de mí, aquí vas a encontrar mis proyectos y trabajos realizados. Tecnologías: HTML - CSS puro - JavaScript - React - Next.js - Tailwind CSS - Redux.",
+      "Mi Portfolio personal mobile/web donde conocerás un poco más de mí, aquí vas a encontrar mis proyectos y trabajos realizados en este último tiempo. Tecnologías: HTML - CSS puro - Tailwind CSS - JavaScript - React - Next.js 14, en donde aplique el dark-mode con la librería de next-themes.",
     demoLink: "",
     imageSrc: "/images/compu.jpeg",
     gitHubLink: "https://github.com/VictoriaCanclini/my-portfolio",

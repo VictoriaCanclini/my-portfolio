@@ -1,6 +1,6 @@
 "use client";
 
-import { Burguer, Download, Moon } from "@/common/icons";
+import { Burguer, DownloadCV, Home } from "@/common/icons";
 import Link from "next/link";
 import "../styles/globals.css";
 import { useEffect, useState } from "react";
@@ -39,10 +39,11 @@ const Navbar = () => {
         <div className="nav-container">
           <div className="logo">
             <Link href="/">
-              <span>VC</span>
+              <span>
+                <Home />
+              </span>
             </Link>
           </div>
-
           <div className="cta-btn">
             <div onClick={toggleMenu}>
               <Burguer />
@@ -69,10 +70,10 @@ const Navbar = () => {
                     target="_blank"
                   >
                     <li onClick={closeMenu}>
-                      <Download color="#c9a4e8" />
+                      <DownloadCV color="#c9a4e8" />
                     </li>
                   </a>
-                  <li>
+                  <li onClick={closeMenu}>
                     <ThemeSwitcher />
                   </li>
                 </ul>
@@ -107,7 +108,7 @@ const Navbar = () => {
                 target="_blank"
               >
                 <li className="viki">
-                  <Download color="#c9a4e8" />
+                  <DownloadCV color="#c9a4e8" />
                 </li>
               </a>
               <li>

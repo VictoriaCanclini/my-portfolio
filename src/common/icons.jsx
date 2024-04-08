@@ -94,6 +94,22 @@ export function Facebook({ color, width, height }) {
   );
 }
 
+export function DownloadCV({ color, width, height }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width || "30"}
+      height={height || "30"}
+      viewBox="0 0 448 512"
+    >
+      <path
+        fill={color || "currentColor"}
+        d="M48 32C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm98.88 133.234c19.636 0 37.082 6.789 49.929 16.971c11.88 9.452 17.444 18.907 22.298 27.393l-33.923 16.949c-2.427-5.565-5.347-11.387-12.846-17.682c-8.248-6.552-16.478-8.484-23.524-8.484c-27.626 0-42.17 25.693-42.17 54.287c0 37.573 19.161 56.22 42.17 56.22c22.3 0 31.278-15.51 37.08-25.435L219.6 302.66c-6.315 9.926-12.374 19.635-25.95 29.069c-7.262 5.09-23.977 15.037-47.736 15.037C100.586 346.766 64 313.81 64 255.87c0-50.636 34.415-90.637 82.88-90.637m75.483 5.328h45.565L303.31 292.24l35.125-121.678H384l-59.379 171.112H281.01z"
+      />
+    </svg>
+  );
+}
+
 export function Download({ color, width, height }) {
   return (
     <svg
@@ -490,14 +506,55 @@ export function Email({ width, height, color }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={width || "30"}
-      height={height || "30"}
-      viewBox="0 0 512 512"
+      width={width || "45"}
+      height={height || "45"}
+      viewBox="0 0 24 24"
     >
       <path
         fill={color || "currentColor"}
-        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
-      />
+        fill-opacity="0"
+        d="M12 13L4 8L12 3L20 8L12 13Z"
+      >
+        <animate
+          fill="freeze"
+          attributeName="fill-opacity"
+          begin="1s"
+          dur="0.15s"
+          values="0;0.3"
+        />
+      </path>
+      <g
+        fill="none"
+        stroke={color || "currentColor"}
+        stroke-linecap="round"
+        stroke-width="2"
+      >
+        <path
+          stroke-dasharray="64"
+          stroke-dashoffset="64"
+          d="M3 8.06083C3 7.71247 3.1813 7.38921 3.47855 7.20755L12 2L20.5214 7.20755C20.8187 7.38921 21 7.71247 21 8.06083V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V8.06083Z"
+        >
+          <animate
+            fill="freeze"
+            attributeName="stroke-dashoffset"
+            dur="0.6s"
+            values="64;0"
+          />
+        </path>
+        <path
+          stroke-dasharray="24"
+          stroke-dashoffset="24"
+          d="M3 8.5L12 14L21 8.5"
+        >
+          <animate
+            fill="freeze"
+            attributeName="stroke-dashoffset"
+            begin="0.6s"
+            dur="0.4s"
+            values="24;0"
+          />
+        </path>
+      </g>
     </svg>
   );
 }
@@ -524,12 +581,177 @@ export function Moon({ width, height, color }) {
       xmlns="http://www.w3.org/2000/svg"
       width={width || "25"}
       height={height || "25"}
-      viewBox="0 0 384 512"
+      viewBox="0 0 24 24"
     >
-      <path
+      <g
         fill={color || "currentColor"}
-        d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
-      />
+        stroke={color || "currentColor"}
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+      >
+        <g stroke-dasharray="2">
+          <path d="M12 21v1M21 12h1M12 3v-1M3 12h-1">
+            <animate
+              fill="freeze"
+              attributeName="stroke-dashoffset"
+              dur="0.2s"
+              values="4;2"
+            />
+          </path>
+          <path
+            fill={color || "currentColor"}
+            d="M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5"
+          >
+            <animate
+              fill="freeze"
+              attributeName="stroke-dashoffset"
+              begin="0.2s"
+              dur="0.2s"
+              values="4;2"
+            />
+          </path>
+        </g>
+        <path
+          fill={color || "currentColor"}
+          d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z"
+          opacity="0"
+        >
+          <set attributeName="opacity" begin="0.5s" to="1" />
+        </path>
+      </g>
+      <g fill={color || "currentColor"} fill-opacity="0">
+        <path d="m15.22 6.03l2.53-1.94L14.56 4L13.5 1l-1.06 3l-3.19.09l2.53 1.94l-.91 3.06l2.63-1.81l2.63 1.81z">
+          <animate
+            id="lineMdSunnyFilledLoopToMoonFilledLoopTransition0"
+            fill="freeze"
+            attributeName="fill-opacity"
+            begin="0.6s;lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+6s"
+            dur="0.4s"
+            values="0;1"
+          />
+          <animate
+            fill="freeze"
+            attributeName="fill-opacity"
+            begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+2.2s"
+            dur="0.4s"
+            values="1;0"
+          />
+        </path>
+        <path d="M13.61 5.25L15.25 4l-2.06-.05L12.5 2l-.69 1.95L9.75 4l1.64 1.25l-.59 1.98l1.7-1.17l1.7 1.17z">
+          <animate
+            fill="freeze"
+            attributeName="fill-opacity"
+            begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+3s"
+            dur="0.4s"
+            values="0;1"
+          />
+          <animate
+            fill="freeze"
+            attributeName="fill-opacity"
+            begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+5.2s"
+            dur="0.4s"
+            values="1;0"
+          />
+        </path>
+        <path d="M19.61 12.25L21.25 11l-2.06-.05L18.5 9l-.69 1.95l-2.06.05l1.64 1.25l-.59 1.98l1.7-1.17l1.7 1.17z">
+          <animate
+            fill="freeze"
+            attributeName="fill-opacity"
+            begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+0.4s"
+            dur="0.4s"
+            values="0;1"
+          />
+          <animate
+            fill="freeze"
+            attributeName="fill-opacity"
+            begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+2.8s"
+            dur="0.4s"
+            values="1;0"
+          />
+        </path>
+        <path d="m20.828 9.731l1.876-1.439l-2.366-.067L19.552 6l-.786 2.225l-2.366.067l1.876 1.439L17.601 12l1.951-1.342L21.503 12z">
+          <animate
+            fill="freeze"
+            attributeName="fill-opacity"
+            begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+3.4s"
+            dur="0.4s"
+            values="0;1"
+          />
+          <animate
+            fill="freeze"
+            attributeName="fill-opacity"
+            begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+5.6s"
+            dur="0.4s"
+            values="1;0"
+          />
+        </path>
+      </g>
+      <mask id="lineMdSunnyFilledLoopToMoonFilledLoopTransition1">
+        <circle cx="12" cy="12" r="12" fill="#fff" />
+        <circle cx="22" cy="2" r="3" fill="#fff">
+          <animate
+            fill="freeze"
+            attributeName="cx"
+            begin="0.1s"
+            dur="0.4s"
+            values="22;18"
+          />
+          <animate
+            fill="freeze"
+            attributeName="cy"
+            begin="0.1s"
+            dur="0.4s"
+            values="2;6"
+          />
+          <animate
+            fill="freeze"
+            attributeName="r"
+            begin="0.1s"
+            dur="0.4s"
+            values="3;12"
+          />
+        </circle>
+        <circle cx="22" cy="2" r="1">
+          <animate
+            fill="freeze"
+            attributeName="cx"
+            begin="0.1s"
+            dur="0.4s"
+            values="22;18"
+          />
+          <animate
+            fill="freeze"
+            attributeName="cy"
+            begin="0.1s"
+            dur="0.4s"
+            values="2;6"
+          />
+          <animate
+            fill="freeze"
+            attributeName="r"
+            begin="0.1s"
+            dur="0.4s"
+            values="1;10"
+          />
+        </circle>
+      </mask>
+      <circle
+        cx="12"
+        cy="12"
+        r="6"
+        fill={color || "currentColor"}
+        mask="url(#lineMdSunnyFilledLoopToMoonFilledLoopTransition1)"
+      >
+        <set attributeName="opacity" begin="0.5s" to="0" />
+        <animate
+          fill="freeze"
+          attributeName="r"
+          begin="0.1s"
+          dur="0.4s"
+          values="6;10"
+        />
+      </circle>
     </svg>
   );
 }
@@ -538,14 +760,83 @@ export function Sun({ width, height, color }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={width || "20"}
-      height={height || "20"}
-      viewBox="0 0 512 512"
+      width={width || "25"}
+      height={height || "25"}
+      viewBox="0 0 24 24"
     >
-      <path
+      <g
         fill={color || "currentColor"}
-        d="M375.7 19.7c-1.5-8-6.9-14.7-14.4-17.8s-16.1-2.2-22.8 2.4L256 61.1 173.5 4.2c-6.7-4.6-15.3-5.5-22.8-2.4s-12.9 9.8-14.4 17.8l-18.1 98.5L19.7 136.3c-8 1.5-14.7 6.9-17.8 14.4s-2.2 16.1 2.4 22.8L61.1 256 4.2 338.5c-4.6 6.7-5.5 15.3-2.4 22.8s9.8 13 17.8 14.4l98.5 18.1 18.1 98.5c1.5 8 6.9 14.7 14.4 17.8s16.1 2.2 22.8-2.4L256 450.9l82.5 56.9c6.7 4.6 15.3 5.5 22.8 2.4s12.9-9.8 14.4-17.8l18.1-98.5 98.5-18.1c8-1.5 14.7-6.9 17.8-14.4s2.2-16.1-2.4-22.8L450.9 256l56.9-82.5c4.6-6.7 5.5-15.3 2.4-22.8s-9.8-12.9-17.8-14.4l-98.5-18.1L375.7 19.7zM269.6 110l65.6-45.2 14.4 78.3c1.8 9.8 9.5 17.5 19.3 19.3l78.3 14.4L402 242.4c-5.7 8.2-5.7 19 0 27.2l45.2 65.6-78.3 14.4c-9.8 1.8-17.5 9.5-19.3 19.3l-14.4 78.3L269.6 402c-8.2-5.7-19-5.7-27.2 0l-65.6 45.2-14.4-78.3c-1.8-9.8-9.5-17.5-19.3-19.3L64.8 335.2 110 269.6c5.7-8.2 5.7-19 0-27.2L64.8 176.8l78.3-14.4c9.8-1.8 17.5-9.5 19.3-19.3l14.4-78.3L242.4 110c8.2 5.7 19 5.7 27.2 0zM256 368a112 112 0 1 0 0-224 112 112 0 1 0 0 224zM192 256a64 64 0 1 1 128 0 64 64 0 1 1 -128 0z"
-      />
+        stroke={color || "currentColor"}
+        stroke-dasharray="2"
+        stroke-dashoffset="2"
+        stroke-linecap="round"
+        stroke-width="2"
+      >
+        <path fill={color || "currentColor"} d="M0 0">
+          <animate
+            fill="freeze"
+            attributeName="d"
+            begin="0.6s"
+            dur="0.2s"
+            values="M12 19v1M19 12h1M12 5v-1M5 12h-1;M12 21v1M21 12h1M12 3v-1M3 12h-1"
+          />
+          <animate
+            fill="freeze"
+            attributeName="stroke-dashoffset"
+            begin="0.6s"
+            dur="0.2s"
+            values="2;0"
+          />
+        </path>
+        <path d="M0 0">
+          <animate
+            fill="freeze"
+            attributeName="d"
+            begin="0.9s"
+            dur="0.2s"
+            values="M17 17l0.5 0.5M17 7l0.5 -0.5M7 7l-0.5 -0.5M7 17l-0.5 0.5;M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5"
+          />
+          <animate
+            fill="freeze"
+            attributeName="stroke-dashoffset"
+            begin="0.9s"
+            dur="1.2s"
+            values="2;0"
+          />
+        </path>
+        <animateTransform
+          attributeName="transform"
+          dur="30s"
+          repeatCount="indefinite"
+          type="rotate"
+          values="0 12 12;360 12 12"
+        />
+      </g>
+      <mask id="lineMdMoonAltToSunnyOutlineLoopTransition0">
+        <circle cx="12" cy="12" r="12" fill="#fff" />
+        <circle cx="12" cy="12" r="8">
+          <animate fill="freeze" attributeName="r" dur="0.4s" values="8;4" />
+        </circle>
+        <circle cx="18" cy="6" r="12" fill="#fff">
+          <animate fill="freeze" attributeName="cx" dur="0.4s" values="18;22" />
+          <animate fill="freeze" attributeName="cy" dur="0.4s" values="6;2" />
+          <animate fill="freeze" attributeName="r" dur="0.4s" values="12;3" />
+        </circle>
+        <circle cx="18" cy="6" r="10">
+          <animate fill="freeze" attributeName="cx" dur="0.4s" values="18;22" />
+          <animate fill="freeze" attributeName="cy" dur="0.4s" values="6;2" />
+          <animate fill="freeze" attributeName="r" dur="0.4s" values="10;1" />
+        </circle>
+      </mask>
+      <circle
+        cx="12"
+        cy="12"
+        r="10"
+        fill={color || "currentColor"}
+        mask="url(#lineMdMoonAltToSunnyOutlineLoopTransition0)"
+      >
+        <animate fill="freeze" attributeName="r" dur="0.4s" values="10;6" />
+      </circle>
     </svg>
   );
 }
@@ -566,7 +857,7 @@ export function Location({ width, height, color }) {
   );
 }
 
-export function ToggleMood({ width, height, color }) {
+export function Home({ width, height, color }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -576,7 +867,7 @@ export function ToggleMood({ width, height, color }) {
     >
       <path
         fill={color || "currentColor"}
-        d="M192 64C86 64 0 150 0 256S86 448 192 448H384c106 0 192-86 192-192s-86-192-192-192H192zm192 96a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"
+        d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
       />
     </svg>
   );

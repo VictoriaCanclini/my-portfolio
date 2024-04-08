@@ -27,7 +27,6 @@ const Skills = () => {
           <HTMLIcon />
           <p>HTML</p>
         </div>
-        {/* </motion.div> */}
         <div className="skill-card global">
           <CSSicon />
           <p>CSS</p>
@@ -36,9 +35,6 @@ const Skills = () => {
           <JSicon />
           <p>JavaScript</p>
         </div>
-        {/* <div className="skill-card typescript">
-          <p>TypeScript</p>
-        </div> */}
         <div className="skill-card global">
           <ReactIcon />
           <p>React</p>
