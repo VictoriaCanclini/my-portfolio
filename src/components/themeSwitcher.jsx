@@ -23,7 +23,6 @@ export function ThemeSwitcher() {
       onClick={toggleTheme}
       style={{
         cursor: "pointer",
-        // backgroundColor: resolvedTheme === "dark" ? "#333" : "#f0f0f0",
       }}
     >
       {resolvedTheme === "dark" ? (
