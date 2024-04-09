@@ -81,7 +81,7 @@ export const projectData = [
     title: "To do List",
     description:
       "Aplicación para agregar editar y eliminar una lista de tareas.\nTecnologías: HTML - CSS - JavaScript",
-    demoLink: "https://clinquant-mooncake-677818.netlify.app",
+    demoLink: "https://loquacious-queijadas-56b057.netlify.app",
     imageSrc: "/images/to-do-list.png",
     gitHubLink: "https://github.com/VictoriaCanclini/to-do-list",
   },
