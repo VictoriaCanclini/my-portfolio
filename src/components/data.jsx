@@ -48,4 +48,41 @@ export const projectData = [
     imageSrc: "/images/TMDB.png",
     gitHubLink: "https://github.com/VictoriaCanclini/26-checkpoint-TMDB",
   },
+  {
+    id: 6,
+    title: "Game of Life",
+    description:
+      "El Juego de la vida es un autómata celular y un juego de simulación diseñado por el matemático británico John Horton Conway en 1970. Consiste en un tablero cuadriculado donde cada celda puede estar viva o muerta, y evoluciona según un conjunto de reglas simples basadas en el estado de las celdas vecinas \nTecnologías: HTML - CSS - JavaScript",
+    demoLink: "https://sweet-sprite-506630.netlify.app",
+    imageSrc: "/images/juego-de-la-vida.png",
+    gitHubLink:
+      "https://github.com/VictoriaCanclini/04-Conway-s-Game-of-Life-WS",
+  },
+  {
+    id: 7,
+    title: "Color Game",
+    description:
+      "Adiviná cual es el color correcto a través de su código rgb.\nTecnologías: HTML - CSS - JavaScript",
+    demoLink: "https://fascinating-baklava-ba8684.netlify.app",
+    imageSrc: "/images/color-game.png",
+    gitHubLink: "https://github.com/VictoriaCanclini/color-game",
+  },
+  {
+    id: 8,
+    title: "Weather Channel",
+    description:
+      "Descubrí el clima actual en cualquier ciudad del mundo ingresando su nombre.\nTecnologías: HTML - CSS - JavaScript",
+    demoLink: "https://poetic-daifuku-01a3a0.netlify.app",
+    imageSrc: "/images/weather-channel.png",
+    gitHubLink: "https://github.com/VictoriaCanclini/weather-channel",
+  },
+  {
+    id: 9,
+    title: "To do List",
+    description:
+      "Aplicación para agregar editar y eliminar una lista de tareas.\nTecnologías: HTML - CSS - JavaScript",
+    demoLink: "https://clinquant-mooncake-677818.netlify.app",
+    imageSrc: "/images/to-do-list.png",
+    gitHubLink: "https://github.com/VictoriaCanclini/to-do-list",
+  },
 ];
