@@ -19,7 +19,7 @@ const Projects = () => {
                   alt="personal"
                 />
                 <div className="small-icons">
-                  <a href={project.gitHubLink} target="_blank">
+                  <a href={project.demoLink} target="_blank">
                     <Download color="#c9a4e8" />
                   </a>
                   <a href={project.gitHubLink} target="_blank">
