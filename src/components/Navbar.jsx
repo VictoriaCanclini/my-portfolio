@@ -54,17 +54,17 @@ const Navbar = () => {
               <div className="vertical-list">
                 <ul>
                   <li onClick={closeMenu}>
-                    <Link href="about">Acerca de mí</Link>
+                    <a href="#about">Acerca de mí</a>
                   </li>
-                  <Link href="skills">
-                    <li onClick={closeMenu}>Habilidades</li>
-                  </Link>
-                  <Link href="projects">
-                    <li onClick={closeMenu}>Proyectos</li>
-                  </Link>
-                  <Link href="contact">
-                    <li onClick={closeMenu}>Contacto</li>
-                  </Link>
+                  <li onClick={closeMenu}>
+                    <a href="#skills">Habilidades</a>
+                  </li>
+                  <li onClick={closeMenu}>
+                    <a href="#projects">Proyectos</a>
+                  </li>
+                  <li onClick={closeMenu}>
+                    <a href="#contact">Contacto</a>
+                  </li>
                   <a
                     href="https://drive.google.com/file/d/1sji27GuIC0UcXfZ5M7XGVfaSnuS62SFd/view?usp=drive_link"
                     target="_blank"
@@ -91,18 +91,18 @@ const Navbar = () => {
           </div>
           <div className="horizontal-list logo">
             <ul>
-              <Link href="about">
-                <li>Acerca de mí</li>
-              </Link>
-              <Link href="skills">
-                <li>Habilidades</li>
-              </Link>
-              <Link href="projects">
-                <li>Proyectos</li>
-              </Link>
-              <Link href="contact">
-                <li>Contacto</li>
-              </Link>
+              <li>
+                <a href="#about">Acerca de mí</a>
+              </li>
+              <li>
+                <a href="#skills">Habilidades</a>
+              </li>
+              <li>
+                <a href="#projects">Proyectos</a>
+              </li>
+              <li>
+                <a href="#contact">Contacto</a>
+              </li>
               <a
                 href="https://drive.google.com/file/d/1sji27GuIC0UcXfZ5M7XGVfaSnuS62SFd/view?usp=drive_link"
                 target="_blank"

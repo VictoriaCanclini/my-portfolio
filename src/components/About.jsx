@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div className="about-container" id="about">
       <h2>Acerca de mí</h2>
       <div className="flex-about">
         <div className="about-text">

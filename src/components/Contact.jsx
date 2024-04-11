@@ -2,7 +2,7 @@ import { Email, Location } from "@/common/icons";
 
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact">
       <h2>Contacto</h2>
       <p>
         No dudes en conectarte conmigo a vikicanclini@gmail.com. Estoy
