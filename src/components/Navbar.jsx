@@ -36,7 +36,7 @@ const Navbar = () => {
     <>
       {/* modo mobile */}
       {isMobile ? (
-        <div className="nav-container">
+        <div className="nav-container-mobile">
           <div className="logo">
             <Link href="/">
               <span>
@@ -92,16 +92,16 @@ const Navbar = () => {
           <div className="horizontal-list logo">
             <ul>
               <li>
-                <a href="#about">Acerca de mí</a>
+                <Link href="about">Acerca de mí</Link>
               </li>
               <li>
-                <a href="#skills">Habilidades</a>
+                <Link href="skills">Habilidades</Link>
               </li>
               <li>
-                <a href="#projects">Proyectos</a>
+                <Link href="projects">Proyectos</Link>
               </li>
               <li>
-                <a href="#contact">Contacto</a>
+                <Link href="contact">Contacto</Link>
               </li>
               <a
                 href="https://drive.google.com/file/d/1sji27GuIC0UcXfZ5M7XGVfaSnuS62SFd/view?usp=drive_link"

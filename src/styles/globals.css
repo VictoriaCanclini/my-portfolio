@@ -34,6 +34,16 @@ li {
 }
 
 /* Navbar */
+
+.nav-container-mobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  position: fixed;
+  width: 90%;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -59,14 +69,14 @@ li {
 
 .menu-container {
   position: absolute;
-  top: 7%;
-  left: 87%; /* Centra horizontalmente */
+  top: 65%;
+  left: 91%; /* Centra horizontalmente */
   transform: translateX(-55%);
   width: 115px;
   text-align: center;
 }
 
-/* Navbar mobile */
+/* Navbar desktop */
 
 .horizontal-list {
   display: flex;
@@ -81,6 +91,8 @@ li {
 .horizontal-list li {
   margin-right: 20px; /* Espacio entre elementos */
 }
+
+/* Navbar mobile */
 
 .vertical-list {
   display: flex;
@@ -277,7 +289,7 @@ hr {
 
 /* Skills */
 .skills-container {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 .skills-container h2 {
@@ -325,7 +337,7 @@ hr {
 
 /* Projects */
 .projects-container {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 
 .projects-container h2 {
