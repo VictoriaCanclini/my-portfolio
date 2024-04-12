@@ -70,7 +70,7 @@ li {
 .menu-container {
   position: absolute;
   top: 65%;
-  left: 91%; /* Centra horizontalmente */
+  left: 90%; /* Centra horizontalmente */
   transform: translateX(-55%);
   width: 115px;
   text-align: center;
@@ -165,7 +165,8 @@ hr {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
+  padding-top: 3rem;
 }
 
 .hero-container .profile-img {
