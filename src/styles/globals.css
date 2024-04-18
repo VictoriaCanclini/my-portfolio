@@ -149,8 +149,7 @@ hr {
   justify-content: space-around;
   align-items: center;
   padding: 2rem 0;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  width: 100%;
 }
 
 .footer-container p {
@@ -246,7 +245,11 @@ hr {
 
 /* About */
 .about-container {
-  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem 0;
 }
 
 .about-container h2 {
@@ -254,8 +257,8 @@ hr {
   font-weight: 600;
   margin-top: 8rem;
   margin-bottom: 1rem;
-  margin-left: 2rem;
   color: #6b6d6f;
+  width: 90%;
 }
 
 .about-container .flex-about {
@@ -263,8 +266,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   gap: 0 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  width: 90%;
 }
 
 .about-container .flex-about .about-text {
@@ -275,7 +277,6 @@ hr {
 .about-container .flex-about .about-text p {
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 1rem;
 }
 
 .about-container .flex-about .about-img {
@@ -314,6 +315,10 @@ hr {
 
 /* Skills */
 .skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 3rem 0;
 }
 
@@ -322,8 +327,7 @@ hr {
   font-weight: 600;
   margin-bottom: 2rem;
   color: #6b6d6f;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  width: 90%;
   margin-top: 2rem;
 }
 
@@ -331,8 +335,7 @@ hr {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  width: 90%;
 }
 
 @media screen and (max-width: 768px) {
@@ -367,6 +370,10 @@ hr {
 
 /* Projects */
 .projects-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 3rem 0;
 }
 
@@ -375,7 +382,7 @@ hr {
   font-weight: 600;
   margin-bottom: 2rem;
   color: #6b6d6f;
-  margin-left: 2rem;
+  width: 90%;
   margin-top: 2rem;
 }
 
@@ -384,8 +391,7 @@ hr {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   color: #6b6d6f;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  width: 90%;
 }
 
 @media screen and (max-width: 768px) {
@@ -452,7 +458,7 @@ hr {
   margin: 0 auto;
   gap: 0.5rem;
   color: #6b6d6f;
-  margin-top: 2.6rem;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -473,8 +479,7 @@ hr {
   font-weight: 400;
   margin-bottom: 1rem;
   text-align: center;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  width: 90%;
 }
 
 .contact-container > div {

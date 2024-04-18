@@ -92,16 +92,16 @@ const Navbar = () => {
           <div className="horizontal-list logo">
             <ul>
               <li>
-                <Link href="about">Acerca de mí</Link>
+                <a href="#about">Acerca de mí</a>
               </li>
               <li>
-                <Link href="skills">Habilidades</Link>
+                <a href="#skills">Habilidades</a>
               </li>
               <li>
-                <Link href="projects">Proyectos</Link>
+                <a href="#projects">Proyectos</a>
               </li>
               <li>
-                <Link href="contact">Contacto</Link>
+                <a href="#contact">Contacto</a>
               </li>
               <a
                 href="https://drive.google.com/file/d/1sji27GuIC0UcXfZ5M7XGVfaSnuS62SFd/view?usp=drive_link"
