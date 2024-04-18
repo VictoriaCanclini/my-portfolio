@@ -9,7 +9,7 @@ const Contact = () => {
           <Image
             src="/images/compu.jpeg"
             width={400}
-            height={300}
+            height={250}
             alt="personal"
             priority={true}
           />

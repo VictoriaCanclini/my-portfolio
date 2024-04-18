@@ -11,7 +11,7 @@ html {
 body {
   font-size: 16px;
   line-height: 1.5;
-  width: 900px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 0;
 }
@@ -58,11 +58,18 @@ li {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(80, 80, 80, 0.2);
+  border-radius: 10px;
 }
 
 .nav-container .logo {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
+  margin-left: 1.5rem;
 }
 
 .cta-btn {
@@ -142,8 +149,8 @@ hr {
   justify-content: space-around;
   align-items: center;
   padding: 2rem 0;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .footer-container p {
@@ -214,8 +221,8 @@ hr {
   font-weight: 400;
   margin-bottom: 1rem;
   color: #9b9c9d;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .hero-container .social-icons {
@@ -247,7 +254,7 @@ hr {
   font-weight: 600;
   margin-top: 8rem;
   margin-bottom: 1rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
   color: #6b6d6f;
 }
 
@@ -256,8 +263,8 @@ hr {
   justify-content: space-between;
   align-items: center;
   gap: 0 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .about-container .flex-about .about-text {
@@ -315,16 +322,17 @@ hr {
   font-weight: 600;
   margin-bottom: 2rem;
   color: #6b6d6f;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
 }
 
 .skills-container .grid-skills {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -367,7 +375,8 @@ hr {
   font-weight: 600;
   margin-bottom: 2rem;
   color: #6b6d6f;
-  margin-left: 1rem;
+  margin-left: 2rem;
+  margin-top: 2rem;
 }
 
 .projects-grid {
@@ -375,8 +384,8 @@ hr {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   color: #6b6d6f;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -443,6 +452,7 @@ hr {
   margin: 0 auto;
   gap: 0.5rem;
   color: #6b6d6f;
+  margin-top: 2.6rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -463,8 +473,8 @@ hr {
   font-weight: 400;
   margin-bottom: 1rem;
   text-align: center;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .contact-container > div {
