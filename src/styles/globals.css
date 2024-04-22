@@ -258,7 +258,7 @@ hr {
   margin-top: 8rem;
   margin-bottom: 1rem;
   color: #6b6d6f;
-  width: 90%;
+  width: 85%;
 }
 
 .about-container .flex-about {
@@ -266,7 +266,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   gap: 0 2rem;
-  width: 90%;
+  width: 85%;
 }
 
 .about-container .flex-about .about-text {
@@ -305,6 +305,14 @@ hr {
     flex-direction: column;
   }
 
+  .about-container h2 {
+    width: 90%;
+  }
+
+  .about-container .flex-about {
+    width: 90%;
+  }
+
   .about-container .flex-about .about-text {
     width: 100%;
   }
@@ -328,7 +336,7 @@ hr {
   font-weight: 600;
   margin-bottom: 2rem;
   color: #6b6d6f;
-  width: 90%;
+  width: 85%;
   margin-top: 2rem;
 }
 
@@ -336,12 +344,18 @@ hr {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  width: 90%;
+  width: 85%;
 }
 
 @media screen and (max-width: 768px) {
   .skills-container .grid-skills {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .skills-container h2 {
+    width: 90%;
+  }
+  .skills-container .grid-skills {
+    width: 90%;
   }
 }
 
@@ -383,7 +397,7 @@ hr {
   font-weight: 600;
   margin-bottom: 2rem;
   color: #6b6d6f;
-  width: 90%;
+  width: 85%;
   margin-top: 2rem;
 }
 
@@ -392,12 +406,18 @@ hr {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   color: #6b6d6f;
-  width: 90%;
+  width: 85%;
 }
 
 @media screen and (max-width: 768px) {
   .projects-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .projects-container h2 {
+    width: 90%;
+  }
+  .projects-grid {
+    width: 90%;
   }
 }
 
