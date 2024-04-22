@@ -194,7 +194,7 @@ hr {
   margin: 0 auto;
   object-fit: cover;
   object-fit: cover;
-  border: 2px solid black;
+  border: 2px solid #9b9c9d;
   filter: grayscale(100%);
   transition: all 0.5s ease-in-out;
   cursor: cell;
