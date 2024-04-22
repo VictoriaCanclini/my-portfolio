@@ -188,11 +188,21 @@ hr {
 }
 
 .hero-container .profile-img {
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   margin: 0 auto;
   object-fit: cover;
+  object-fit: cover;
+  border: 2px solid black;
+  filter: grayscale(100%);
+  transition: all 0.5s ease-in-out;
+  cursor: cell;
+}
+
+.hero-container .profile-img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.02);
 }
 
 .hero-container .hero-text {
@@ -205,6 +215,10 @@ hr {
 @media screen and (max-width: 768px) {
   .hero-container .hero-text {
     width: 100%;
+  }
+  .hero-container .profile-img {
+    width: 200px;
+    height: 200px;
   }
 }
 
