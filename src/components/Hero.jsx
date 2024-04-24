@@ -13,7 +13,7 @@ const Hero = () => {
         priority={true}
       />
       <div className="hero-text">
-        <h1>Hola! soy Victoria 👋</h1>
+        <h1>Hola! soy Victoria 👋👩🏽‍💻</h1>
         <p>Una desalloradora web Full Stack y Contadora pública.</p>
         <div className="social-icons">
           <a
