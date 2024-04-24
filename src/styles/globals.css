@@ -511,7 +511,6 @@ hr {
 
 .contact-container form {
   font-size: 1.2rem;
-  color: #6b6d6f;
 }
 
 .contact-container form input {
@@ -535,12 +534,11 @@ hr {
 }
 
 .contact-container form button {
-  padding: 0.2rem;
+  padding: 0.3rem;
   border: 1px solid #6b6d6f;
   border-radius: 0.2rem;
   font-size: 1rem;
   margin-left: 8rem;
-  color: #1d1e20;
 }
 
 .contact-container p {
