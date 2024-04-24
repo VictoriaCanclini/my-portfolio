@@ -534,11 +534,12 @@ hr {
 }
 
 .contact-container form button {
-  padding: 0.3rem;
+  padding: 0.2rem;
   border: 1px solid #6b6d6f;
   border-radius: 0.2rem;
   font-size: 1rem;
-  margin-left: 8rem;
+  margin-left: 7.5rem;
+  color: black;
 }
 
 .contact-container p {
