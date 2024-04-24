@@ -505,8 +505,42 @@ hr {
 .contact-container h2 {
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 1rem;
   color: #6b6d6f;
+  margin-top: 2rem;
+}
+
+.contact-container form {
+  font-size: 1.2rem;
+  color: #6b6d6f;
+}
+
+.contact-container form input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #6b6d6f;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  color: #6b6d6f;
+}
+
+.contact-container form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #6b6d6f;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+  color: #6b6d6f;
+}
+
+.contact-container form button {
+  padding: 0.2rem;
+  border: 1px solid #6b6d6f;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  margin-left: 8rem;
+  color: #1d1e20;
 }
 
 .contact-container p {
