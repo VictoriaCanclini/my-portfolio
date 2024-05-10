@@ -16,6 +16,7 @@ import {
   PostmanIcon,
   TrelloIcon,
   SequelizeIcon,
+  TSicon,
 } from "../common/icons";
 
 const Skills = () => {
@@ -34,6 +35,10 @@ const Skills = () => {
         <div className="skill-card global">
           <JSicon />
           <p>JavaScript</p>
+        </div>
+        <div className="skill-card global">
+          <TSicon />
+          <p>TypeScript</p>
         </div>
         <div className="skill-card global">
           <ReactIcon />
