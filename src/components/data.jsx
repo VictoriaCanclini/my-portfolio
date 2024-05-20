@@ -1,6 +1,15 @@
 export const projectData = [
   {
     id: 1,
+    title: "STUDIO BY M",
+    description:
+      "Aplicación mobile/web para la compra de cursos de UX/UI utilizando Mercado pago y PayPal.\nTecnologías: HTML - CSS - JavaScript - Node.js - Express - MongoDB - Mongoose - React - Next.js - Redux - Tailwind CSS - Mercado pago - PayPal - Figma - Trello.",
+    demoLink: "https://studiobym.com.ar",
+    imageSrc: "/images/Maca.png",
+    gitHubLink: "https://github.com/flormartinez92/Studio-M-Client",
+  },
+  {
+    id: 2,
     title: "PORTFOLIO",
     description:
       "Mi Portfolio personal mobile/web donde conocerás un poco más de mí, aquí vas a encontrar mis proyectos y trabajos realizados en este último tiempo. Tecnologías: HTML - CSS puro - Tailwind CSS - JavaScript - React - Next.js 14, en donde aplique el dark-mode con la librería de next-themes.",
@@ -9,7 +18,7 @@ export const projectData = [
     gitHubLink: "https://github.com/VictoriaCanclini/my-portfolio",
   },
   {
-    id: 2,
+    id: 3,
     title: "BOX DELIVERY",
     description:
       "Aplicación mobile de una empresa de logística de última milla que tiene cientos de repartidores que al inicio del día reciben x cantidad de paquetes cada uno y que deberán ir repartiendo a lo largo de la jornada. Tecnologías: HTML - CSS - TypeScript - Node.js - Nest.js - MongoDB - Mongoose - React - Next.js - Redux - Tailwind - Docker - AWS - GitHub Actions - Figma - Trello.",
@@ -17,16 +26,6 @@ export const projectData = [
       "https://drive.google.com/file/d/1-JXRbz35e-1Ag4EnpI9rh4QFRqS7ecQj/view?usp=drive_link",
     imageSrc: "/images/box.png",
     gitHubLink: "https://github.com/GermanCuevas/box-client",
-  },
-  {
-    id: 3,
-    title: "STUDIO BY M",
-    description:
-      "Aplicación mobile/web para la compra de cursos de UX/UI utilizando Mercado pago y PayPal.\nTecnologías: HTML - CSS - JavaScript - Node.js - Express - MongoDB - Mongoose - React - Next.js - Redux - Tailwind CSS - Mercado pago - PayPal - Figma - Trello.",
-    demoLink:
-      "https://drive.google.com/file/d/1bZv23WhlXZ2N-GmYqR-RdRpUtDr1oo8C/view?usp=drive_link",
-    imageSrc: "/images/Maca.png",
-    gitHubLink: "https://github.com/flormartinez92/Studio-M-Client",
   },
   {
     id: 4,
