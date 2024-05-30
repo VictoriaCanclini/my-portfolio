@@ -38,11 +38,13 @@ const Navbar = () => {
       {isMobile ? (
         <div className="nav-container-mobile">
           <div className="logo">
-            <Link href="/">
+            {/* <Link href="/"> */}
+            <a href="#hero">
               <span>
                 <Home />
               </span>
-            </Link>
+            </a>
+            {/* </Link> */}
           </div>
           <div className="cta-btn">
             <div onClick={toggleMenu}>
@@ -85,9 +87,11 @@ const Navbar = () => {
         // modo Escritorio
         <div className="nav-container">
           <div className="logo">
-            <Link href="/">
+            {/* <Link href="/"> */}
+            <a href="#hero">
               <span>Victoria Canclini</span>
-            </Link>
+            </a>
+            {/* </Link> */}
           </div>
           <div className="horizontal-list logo">
             <ul>

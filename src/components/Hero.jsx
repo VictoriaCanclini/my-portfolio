@@ -3,7 +3,7 @@ import { Twitter, GitHub, LinkedIn } from "@/common/icons";
 
 const Hero = () => {
   return (
-    <div className="hero-container">
+    <div className="hero-container" id="hero">
       <Image
         src="/images/vic.jpg"
         className="profile-img"
