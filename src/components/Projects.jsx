@@ -15,7 +15,7 @@ const Projects = () => {
                   src={project.imageSrc}
                   className="profile-img"
                   width={60}
-                  height={55}
+                  height={50}
                   alt="personal"
                 />
                 <div className="small-icons">

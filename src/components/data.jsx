@@ -1,6 +1,15 @@
 export const projectData = [
   {
     id: 1,
+    title: "Digital Money House",
+    description:
+      "Billetera virtual mobile/web para depositar y transferir fondos de una cuenta a otra.\nTecnologías: HTML5 - CSS - JavaScript - React - Next.js - Redux - Tailwind CSS - Figma.",
+    demoLink: "https://digital-money-house-psi.vercel.app/",
+    imageSrc: "/images/Logo 01.png",
+    gitHubLink: "https://github.com/VictoriaCanclini/digital-money-house",
+  },
+  {
+    id: 2,
     title: "STUDIO BY M",
     description:
       "Aplicación mobile/web para la compra de cursos de UX/UI utilizando Mercado pago y PayPal.\nTecnologías: HTML5 - CSS - JavaScript - Node.js - Express - MongoDB - Mongoose - JWT - React - Next.js - Redux - Tailwind CSS - Mercado pago - PayPal - Figma - Trello.",
@@ -9,7 +18,7 @@ export const projectData = [
     gitHubLink: "https://github.com/flormartinez92/Studio-M-Client",
   },
   {
-    id: 2,
+    id: 3,
     title: "PORTFOLIO",
     description:
       "Mi Portfolio personal mobile/web donde conocerás un poco más de mí, aquí vas a encontrar mis proyectos y trabajos realizados en este último tiempo. Tecnologías: HTML5 - CSS puro - JavaScript - React - Next.js 14, en donde aplique el dark-mode con la librería de next-themes.",
@@ -18,7 +27,7 @@ export const projectData = [
     gitHubLink: "https://github.com/VictoriaCanclini/my-portfolio",
   },
   {
-    id: 3,
+    id: 4,
     title: "BOX DELIVERY",
     description:
       "Aplicación mobile de una empresa de logística de última milla que tiene cientos de repartidores que al inicio del día reciben x cantidad de paquetes cada uno y que deberán ir repartiendo a lo largo de la jornada. Tecnologías: HTML5 - CSS - TypeScript - Node.js - Nest.js - MongoDB - Mongoose - React - Next.js - Redux - Tailwind CSS - Docker - AWS - GitHub Actions - Figma - Trello.",
@@ -28,7 +37,7 @@ export const projectData = [
     gitHubLink: "https://github.com/GermanCuevas/box-client",
   },
   {
-    id: 4,
+    id: 5,
     title: "DEVBOOKS",
     description:
       "Aplicación web para adquirir libros de programación y tecnología. \nTecnologías: HTML5 - CSS - JavaScript - Node.js - Express - PostgreSQL - Sequelize - React context - React - Material UI.",
@@ -38,7 +47,7 @@ export const projectData = [
     gitHubLink: "https://github.com/Francisco-Villanueva/eccomerce-book",
   },
   {
-    id: 5,
+    id: 6,
     title: "TMDB",
     description:
       "Aplicación web que contiene películas y series utilizando una API externa, donde se puede agregar y eliminar en una lista de favoritos las películas que son de tu interés.\nTecnologías: HTML5 - CSS - JavaScript - Node.js - Express - PostgreSQL - Sequelize - React context - React - Bulma CSS. ",
@@ -48,7 +57,7 @@ export const projectData = [
     gitHubLink: "https://github.com/VictoriaCanclini/26-checkpoint-TMDB",
   },
   {
-    id: 6,
+    id: 7,
     title: "Game of Life",
     description:
       "El Juego de la vida es un autómata celular y un juego de simulación diseñado por el matemático británico John Horton Conway en 1970. Consiste en un tablero cuadriculado donde cada celda puede estar viva o muerta, y evoluciona según un conjunto de reglas simples basadas en el estado de las celdas vecinas. \nTecnologías: HTML5 - CSS - JavaScript.",
@@ -58,7 +67,7 @@ export const projectData = [
       "https://github.com/VictoriaCanclini/04-Conway-s-Game-of-Life-WS",
   },
   {
-    id: 7,
+    id: 8,
     title: "Color Game",
     description:
       "Adiviná cual es el color correcto a través de su código RGB (red-green-blue).\nTecnologías: HTML5 - CSS - JavaScript.",
@@ -67,7 +76,7 @@ export const projectData = [
     gitHubLink: "https://github.com/VictoriaCanclini/color-game",
   },
   {
-    id: 8,
+    id: 9,
     title: "Weather Channel",
     description:
       "Descubrí el clima actual en cualquier ciudad del mundo ingresando su nombre.\nTecnologías: HTML5 - CSS - JavaScript.",
@@ -76,7 +85,7 @@ export const projectData = [
     gitHubLink: "https://github.com/VictoriaCanclini/weather-channel",
   },
   {
-    id: 9,
+    id: 10,
     title: "To do List",
     description:
       "Aplicación para agregar, editar y eliminar una lista de tareas.\nTecnologías: HTML5 - CSS - JavaScript.",
