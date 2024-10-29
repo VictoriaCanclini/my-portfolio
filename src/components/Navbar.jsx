@@ -68,7 +68,7 @@ const Navbar = () => {
                     <a href="#contact">Contacto</a>
                   </li>
                   <a
-                    href="https://drive.google.com/file/d/1sji27GuIC0UcXfZ5M7XGVfaSnuS62SFd/view?usp=drive_link"
+                    href="https://drive.google.com/file/d/1wdsXAlS6wqgK6z7EPYfAjiVtJZu78DAq/view?usp=sharing"
                     target="_blank"
                   >
                     <li onClick={closeMenu}>
@@ -108,7 +108,7 @@ const Navbar = () => {
                 <a href="#contact">Contacto</a>
               </li>
               <a
-                href="https://drive.google.com/file/d/1sji27GuIC0UcXfZ5M7XGVfaSnuS62SFd/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1wdsXAlS6wqgK6z7EPYfAjiVtJZu78DAq/view?usp=sharing"
                 target="_blank"
               >
                 <li className="viki">
