@@ -14,8 +14,8 @@ const Projects = () => {
                 <Image
                   src={project.imageSrc}
                   className="profile-img"
-                  width={60}
-                  height={50}
+                  width={40}
+                  height={35}
                   alt="personal"
                 />
                 <div className="small-icons">

@@ -3,9 +3,9 @@ export const projectData = [
     id: 1,
     title: "Digital Money House",
     description:
-      "Billetera virtual mobile/web para depositar y transferir fondos de una cuenta a otra.\nTecnologías: HTML5 - CSS - JavaScript - React - Next.js - Redux - Tailwind CSS - Figma.",
+      "Billetera virtual mobile/web para depositar y transferir fondos de una cuenta a otra.\nTecnologías: HTML5 - CSS - JavaScript - React - Next.14 - Redux - Tailwind CSS - Figma.",
     demoLink: "https://digital-money-house-psi.vercel.app/",
-    imageSrc: "/images/Logo 01.png",
+    imageSrc: "/images/Logo.png",
     gitHubLink: "https://github.com/VictoriaCanclini/digital-money-house",
   },
   {
