@@ -92,6 +92,18 @@ const Skills = () => {
           <TrelloIcon />
           <p>Trello</p>
         </div>
+        <div className="skill-card global">
+          {/* <TrelloIcon /> */}
+          <p>PHP</p>
+        </div>
+        <div className="skill-card global">
+          {/* <TrelloIcon /> */}
+          <p>Vue.js</p>
+        </div>
+        <div className="skill-card global">
+          {/* <TrelloIcon /> */}
+          <p>AWS</p>
+        </div>
       </div>
     </div>
   );
