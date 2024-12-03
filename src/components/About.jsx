@@ -18,9 +18,13 @@ const About = () => {
             equipos y adquirir experiencia en las últimas tecnologías, tengo
             sólidas aptitudes para la resolución de problemas, trabajo en
             equipo, planificación y cumplimiento de objetivos producto de mis
-            años de experiencia como auditora externa en una Big four. Cada
-            desafío es una oportunidad para aprender y estoy decidida a
-            enfrentarlos con entusiasmo y determinación.
+            años de experiencia como auditora externa en una Big four.
+            Actualmente, estoy trabajando como desarrolladora Full Stack en
+            Hotelinking, una compañía ubicada en España en donde trabajamos en
+            una plataforma de digitalización y automatización de procesos
+            estratégicos para hoteles. Cada desafío es una oportunidad para
+            aprender y estoy decidida a enfrentarlos con entusiasmo y
+            determinación.
           </p>
         </div>
         <div className="about-img">

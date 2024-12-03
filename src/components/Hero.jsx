@@ -14,7 +14,7 @@ const Hero = () => {
       />
       <div className="hero-text">
         <h1>Hola! soy Victoria 👋</h1>
-        <p>Una desalloradora web Full Stack y Contadora pública.</p>
+        <p>Una desalloradora Full Stack y Contadora pública.</p>
         <div className="social-icons">
           <a
             href="https://twitter.com/vikicanclini"
