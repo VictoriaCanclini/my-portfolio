@@ -13,7 +13,8 @@ export const projectData = [
     title: "STUDIO BY M",
     description:
       "Aplicación mobile/web para la compra de cursos de UX/UI utilizando Mercado pago y PayPal.\nTecnologías: HTML5 - CSS - JavaScript - Node.js - Express - MongoDB - Mongoose - JWT - React - Next.js - Redux - Tailwind CSS - Mercado pago - PayPal - Figma - Trello.",
-    demoLink: "http://studiobym.com.ar",
+    demoLink:
+      "https://drive.google.com/file/d/1bZv23WhlXZ2N-GmYqR-RdRpUtDr1oo8C/view?usp=sharing",
     imageSrc: "/images/Maca.png",
     gitHubLink: "https://github.com/flormartinez92/Studio-M-Client",
   },
