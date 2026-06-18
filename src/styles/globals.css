@@ -272,6 +272,12 @@ hr {
   margin-bottom: 1rem;
   color: #6b6d6f;
   width: 85%;
+  transition: color 0.3s ease;
+  cursor: default;
+}
+
+.about-container h2:hover {
+  color: #c9a4e8;
 }
 
 .about-container .flex-about {
@@ -351,6 +357,12 @@ hr {
   color: #6b6d6f;
   width: 85%;
   margin-top: 2rem;
+  transition: color 0.3s ease;
+  cursor: default;
+}
+
+.skills-container h2:hover {
+  color: #c9a4e8;
 }
 
 .skills-container .grid-skills {
@@ -412,6 +424,12 @@ hr {
   color: #6b6d6f;
   width: 85%;
   margin-top: 2rem;
+  transition: color 0.3s ease;
+  cursor: default;
+}
+
+.projects-container h2:hover {
+  color: #c9a4e8;
 }
 
 .projects-grid {
@@ -438,6 +456,13 @@ hr {
   border: 1px solid #cfcccc;
   padding: 20px;
   border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(201, 164, 232, 0.25);
+  border-color: #c9a4e8;
 }
 
 .project-card .project-header {
@@ -506,6 +531,12 @@ hr {
   font-weight: 600;
   color: #6b6d6f;
   margin-top: 2rem;
+  transition: color 0.3s ease;
+  cursor: default;
+}
+
+.contact-container h2:hover {
+  color: #c9a4e8;
 }
 
 .contact-container form {
@@ -533,12 +564,20 @@ hr {
 }
 
 .contact-container form button {
-  padding: 0.2rem;
-  border: 1px solid #6b6d6f;
-  border-radius: 0.2rem;
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.4rem;
   font-size: 1rem;
-  margin-left: 7.5rem;
-  color: black;
+  font-weight: 600;
+  background-color: #c9a4e8;
+  color: #1d1e20;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact-container form button:hover {
+  background-color: #b98ad6;
 }
 
 .contact-container p {

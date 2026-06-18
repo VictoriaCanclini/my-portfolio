@@ -12,18 +12,14 @@ const About = () => {
             llevaron a descubrir el fascinante mundo de la tecnología. Mi camino
             en el mundo de la programación comienza de manera autodidacta, para
             luego, con el fin de acelerar mi curva de aprendizaje inicié un
-            coding bootcamp en plataforma 5 Full Stack. Me motiva mucho
-            desarrollar mis habilidades y crecer profesionalmente. Estoy en
+            coding bootcamp full stack en plataforma 5. 
+            Me motiva mucho desarrollar mis habilidades y crecer profesionalmente. Estoy en
             constante búsqueda de oportunidades para colaborar con nuevos
             equipos y adquirir experiencia en las últimas tecnologías, tengo
             sólidas aptitudes para la resolución de problemas, trabajo en
             equipo, planificación y cumplimiento de objetivos producto de mis
             años de experiencia como auditora externa en una Big four.
-            Actualmente, estoy trabajando como desarrolladora Full Stack en
-            Hotelinking, una compañía ubicada en España en donde trabajamos en
-            una plataforma de digitalización y automatización de procesos
-            estratégicos para hoteles. Cada desafío es una oportunidad para
-            aprender y estoy decidida a enfrentarlos con entusiasmo y
+            Cada desafío es una oportunidad para aprender y estoy decidida a enfrentarlos con entusiasmo y
             determinación.
           </p>
         </div>
