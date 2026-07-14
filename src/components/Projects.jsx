@@ -5,7 +5,6 @@ const Projects = () => {
     <section className="section band reveal" id="projects">
       <div className="inner">
         <div className="block-head">
-          <span className="idx">03</span>
           <h2>Proyectos</h2>
         </div>
         <div className="projects-grid">

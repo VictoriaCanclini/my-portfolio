@@ -23,7 +23,6 @@ const Skills = () => {
     <section className="section white reveal" id="skills">
       <div className="inner">
         <div className="block-head">
-          <span className="idx">02</span>
           <h2>Habilidades</h2>
         </div>
 

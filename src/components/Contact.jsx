@@ -65,7 +65,6 @@ const Contact = () => {
     <section className="section white reveal" id="contact">
       <div className="inner">
         <div className="block-head">
-          <span className="idx">04</span>
           <h2>Contacto</h2>
         </div>
         <div className="contact-grid">
