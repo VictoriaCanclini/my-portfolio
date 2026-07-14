@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { EmailIcon } from "@/common/icons";
 
 const Hero = () => {
   return (
@@ -31,6 +32,10 @@ const Hero = () => {
             <div className="prop-value">Contadora Pública</div>
           </div>
           <div className="prop-row">
+            <div className="prop-label">Formación reciente</div>
+            <div className="prop-value">IA en Programación</div>
+          </div>
+          <div className="prop-row">
             <div className="prop-label">Stack principal</div>
             <div className="prop-value">
               <span className="tag-inline">React</span>
@@ -40,9 +45,9 @@ const Hero = () => {
           </div>
           <div className="prop-row">
             <div className="prop-label">Contacto</div>
-            <div className="prop-value">
+            <div className="prop-value icon-links">
               <a href="mailto:vikicanclini@gmail.com">
-                vikicanclini@gmail.com
+                <EmailIcon width="14" height="14" /> vikicanclini@gmail.com
               </a>
             </div>
           </div>

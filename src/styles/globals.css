@@ -276,6 +276,13 @@ header.navbar {
   border-bottom: 1px solid transparent;
 }
 
+.icon-links a,
+.icon-text {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .prop-value a:hover {
   border-color: var(--clay);
 }
@@ -288,6 +295,11 @@ header.navbar {
   background: rgba(255, 255, 255, 0.55);
   color: #6b4a35;
   margin: 2px 6px 2px 0;
+  transition: transform 0.2s ease;
+}
+
+.tag-inline:hover {
+  transform: scale(1.08);
 }
 
 .properties-panel {
@@ -666,6 +678,10 @@ footer p {
     color: var(--ink-soft);
   }
 
+  .side-nav a .dot {
+    background: rgba(58, 42, 32, 0.6);
+  }
+
   .side-nav a:hover {
     background: var(--card);
     color: var(--ink);
@@ -724,6 +740,10 @@ footer p {
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+
+  .btn-submit {
+    align-self: center;
   }
 
   .toast {

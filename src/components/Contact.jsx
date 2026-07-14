@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { EmailIcon, GitHub, Instagram, LinkedIn, Location } from "@/common/icons";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -75,6 +76,7 @@ const Contact = () => {
                 id="name"
                 type="text"
                 name="name"
+                placeholder="tu nombre"
                 value={formData.name}
                 onChange={handleInputChange}
                 required
@@ -86,6 +88,7 @@ const Contact = () => {
                 id="email"
                 type="email"
                 name="email"
+                placeholder="tu@email.com"
                 value={formData.email}
                 onChange={handleInputChange}
                 required
@@ -96,6 +99,7 @@ const Contact = () => {
               <textarea
                 id="msg"
                 name="mensaje"
+                placeholder="contame sobre tu proyecto"
                 value={formData.mensaje}
                 onChange={handleInputChange}
                 required
@@ -113,25 +117,27 @@ const Contact = () => {
             <div className="properties" style={{ marginTop: "20px" }}>
               <div className="prop-row">
                 <div className="prop-label">Email</div>
-                <div className="prop-value">
+                <div className="prop-value icon-links">
                   <a href="mailto:vikicanclini@gmail.com">
-                    vikicanclini@gmail.com
+                    <EmailIcon width="14" height="14" /> vikicanclini@gmail.com
                   </a>
                 </div>
               </div>
               <div className="prop-row">
                 <div className="prop-label">Ubicación</div>
-                <div className="prop-value">Buenos Aires, Argentina</div>
+                <div className="prop-value icon-text">
+                  <Location width="14" height="14" /> Buenos Aires, Argentina
+                </div>
               </div>
               <div className="prop-row">
                 <div className="prop-label">Redes</div>
-                <div className="prop-value">
+                <div className="prop-value icon-links">
                   <a
                     href="https://www.linkedin.com/in/victoriacanclini"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    LinkedIn
+                    <LinkedIn width="14" height="14" /> LinkedIn
                   </a>{" "}
                   ·{" "}
                   <a
@@ -139,7 +145,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    GitHub
+                    <GitHub width="14" height="14" /> GitHub
                   </a>{" "}
                   ·{" "}
                   <a
@@ -147,7 +153,7 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Instagram
+                    <Instagram width="14" height="14" /> Instagram
                   </a>
                 </div>
               </div>
