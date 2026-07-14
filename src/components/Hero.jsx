@@ -32,7 +32,7 @@ const Hero = () => {
             <div className="prop-value">Contadora Pública</div>
           </div>
           <div className="prop-row">
-            <div className="prop-label">Formación reciente</div>
+            <div className="prop-label">Formación actual</div>
             <div className="prop-value">IA en Programación</div>
           </div>
           <div className="prop-row">

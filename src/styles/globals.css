@@ -283,6 +283,10 @@ header.navbar {
   gap: 5px;
 }
 
+.icon-text {
+  color: var(--clay);
+}
+
 .prop-value a:hover {
   border-color: var(--clay);
 }
@@ -721,6 +725,15 @@ footer p {
     row-gap: 20px;
     padding-top: 32px;
     padding-bottom: 28px;
+  }
+
+  .hero-heading {
+    text-align: center;
+  }
+
+  .page-subtitle {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero-photo {
