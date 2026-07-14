@@ -7,8 +7,7 @@ const Hero = () => {
         <div className="hero-heading">
           <h1 className="page-title">Victoria Canclini</h1>
           <p className="page-subtitle">
-            Desarrolladora Full Stack &amp; Contadora Pública — Buenos Aires,
-            Argentina
+            Desarrolladora Full Stack &amp; Contadora Pública
           </p>
         </div>
 
@@ -36,7 +35,6 @@ const Hero = () => {
             <div className="prop-value">
               <span className="tag-inline">React</span>
               <span className="tag-inline">Next.js</span>
-              <span className="tag-inline">Node.js</span>
               <span className="tag-inline">TypeScript</span>
             </div>
           </div>

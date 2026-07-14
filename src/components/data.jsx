@@ -32,7 +32,7 @@ export const projectData = [
       "App mobile/web para la compra de cursos de UX/UI con Mercado Pago y PayPal.",
     tags: ["Node.js", "MongoDB", "React", "Next.js"],
     demoLink:
-      "https://drive.google.com/file/d/1bZv23WhlXZ2N-GmYqR-RdRpUtDr1oo8C/view?usp=sharing",
+      "https://drive.google.com/file/d/1-Qr5kWd6ytZwcJ9nF_Zky5VtglQUE9eU/view?usp=sharing",
     gitHubLink: "https://github.com/flormartinez92/Studio-M-Client",
   },
   {
@@ -42,7 +42,7 @@ export const projectData = [
       "App mobile de logística de última milla para gestionar repartos diarios.",
     tags: ["TypeScript", "Nest.js", "Docker", "AWS"],
     demoLink:
-      "https://drive.google.com/file/d/1-JXRbz35e-1Ag4EnpI9rh4QFRqS7ecQj/view?usp=drive_link",
+      "https://drive.google.com/file/d/1AMNkIgqyNm8dTYtgKpknc3HjOsb4_aQO/view?usp=sharing",
     gitHubLink: "https://github.com/GermanCuevas/box-client",
   },
   {
@@ -52,7 +52,7 @@ export const projectData = [
       "Tienda web para adquirir libros de programación y tecnología.",
     tags: ["Node.js", "PostgreSQL", "Material UI"],
     demoLink:
-      "https://drive.google.com/file/d/1FDTm-7SWD_wi25ZOmx9v69kt7FuxiKIe/view?usp=drive_link",
+      "https://drive.google.com/file/d/1Cxlzh2QFYKUkQYudsG-2L0HDHVJ_vyyL/view?usp=sharing",
     gitHubLink: "https://github.com/Francisco-Villanueva/eccomerce-book",
   },
   {
@@ -62,7 +62,7 @@ export const projectData = [
       "App web de películas y series con API externa y lista de favoritos.",
     tags: ["Node.js", "PostgreSQL", "React", "Bulma"],
     demoLink:
-      "https://drive.google.com/file/d/1K529CsTpntmZiSXOqADjzd-m3IMDNiAp/view?usp=drive_link",
+      "https://drive.google.com/file/d/1irfQA2cZynARxKSNVVIa_gG9ovzRacL1/view?usp=sharing",
     gitHubLink: "https://github.com/VictoriaCanclini/26-checkpoint-TMDB",
   },
   {
