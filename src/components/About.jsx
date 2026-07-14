@@ -4,7 +4,7 @@ const About = () => {
       <div className="inner">
         <div className="block-head">
           <span className="idx">01</span>
-          <h2>Sobre mí</h2>
+          <h2>Acerca de mí</h2>
         </div>
         <div className="prose">
           <p>

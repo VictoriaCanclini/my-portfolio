@@ -20,7 +20,7 @@ const Navbar = () => {
         <ul className={`side-nav ${isMenuOpen ? "open" : ""}`}>
           <li>
             <a href="#about" onClick={closeMenu}>
-              <span className="dot"></span>Sobre mí
+              <span className="dot"></span>Acerca de mí
             </a>
           </li>
           <li>
