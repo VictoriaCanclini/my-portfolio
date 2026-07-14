@@ -73,12 +73,4 @@ export const projectData = [
     demoLink: "https://poetic-daifuku-01a3a0.netlify.app",
     gitHubLink: "https://github.com/VictoriaCanclini/weather-channel",
   },
-  {
-    id: 9,
-    title: "To Do List",
-    description: "Aplicación para agregar, editar y eliminar tareas.",
-    tags: ["HTML5", "CSS", "JavaScript"],
-    demoLink: "https://loquacious-queijadas-56b057.netlify.app",
-    gitHubLink: "https://github.com/VictoriaCanclini/to-do-list",
-  },
 ];
