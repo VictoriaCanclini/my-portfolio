@@ -27,7 +27,7 @@ const About = () => {
           <span className="mark">&ldquo;</span>
           <span>
             Cada desafío es una oportunidad para aprender, y estoy decidida a
-            enfrentarlos con entusiasmo y determinación.
+            enfrentarlos con entusiasmo y determinación.&rdquo;
           </span>
         </div>
       </div>
