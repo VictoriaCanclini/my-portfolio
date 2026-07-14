@@ -1,45 +1,53 @@
 import Image from "next/image";
-import { Twitter, GitHub, LinkedIn } from "@/common/icons";
 
 const Hero = () => {
   return (
-    <div className="hero-container" id="hero">
-      <Image
-        src="/images/vic.jpg"
-        className="profile-img"
-        width={300}
-        height={300}
-        alt="personal"
-        priority={true}
-      />
-      <div className="hero-text">
-        <h1>Hola! soy Victoria 👋</h1>
-        <p>Desalloradora Full Stack y Contadora pública.</p>
-        <div className="social-icons">
-          <a
-            href="https://twitter.com/vikicanclini"
-            aria-label="Twitter"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Twitter color="#808080" />
-          </a>
-          <a
-            href="https://github.com/VictoriaCanclini"
-            aria-label="GitHub"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <GitHub color="#808080" />
-          </a>
-          <a
-            href="http://www.linkedin.com/in/victoriacanclini"
-            aria-label="LinkedIn"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <LinkedIn color="#808080" />
-          </a>
+    <div className="hero-panel" id="hero">
+      <div className="inner">
+        <div className="hero-heading">
+          <h1 className="page-title">Victoria Canclini</h1>
+          <p className="page-subtitle">
+            Desarrolladora Full Stack &amp; Contadora Pública — Buenos Aires,
+            Argentina
+          </p>
+        </div>
+
+        <div className="hero-photo">
+          <Image
+            src="/images/vic.jpg"
+            width={264}
+            height={264}
+            alt="Foto de Victoria Canclini"
+            priority
+          />
+        </div>
+
+        <div className="properties properties-panel">
+          <div className="prop-row">
+            <div className="prop-label">Rol actual</div>
+            <div className="prop-value">Desarrolladora Full Stack</div>
+          </div>
+          <div className="prop-row">
+            <div className="prop-label">Formación previa</div>
+            <div className="prop-value">Contadora Pública</div>
+          </div>
+          <div className="prop-row">
+            <div className="prop-label">Stack principal</div>
+            <div className="prop-value">
+              <span className="tag-inline">React</span>
+              <span className="tag-inline">Next.js</span>
+              <span className="tag-inline">Node.js</span>
+              <span className="tag-inline">TypeScript</span>
+            </div>
+          </div>
+          <div className="prop-row">
+            <div className="prop-label">Contacto</div>
+            <div className="prop-value">
+              <a href="mailto:vikicanclini@gmail.com">
+                vikicanclini@gmail.com
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

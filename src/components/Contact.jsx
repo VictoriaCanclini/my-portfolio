@@ -1,7 +1,6 @@
 "use client";
 
-import { Email, Location } from "@/common/icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +8,13 @@ const Contact = () => {
     email: "",
     mensaje: "",
   });
+  const [toast, setToast] = useState(null);
+
+  useEffect(() => {
+    if (!toast) return;
+    const timer = setTimeout(() => setToast(null), 5000);
+    return () => clearTimeout(timer);
+  }, [toast]);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -31,81 +37,142 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        alert("¡El mensaje se envió correctamente!");
+        setToast({
+          type: "success",
+          message: "¡Tu mensaje se envió correctamente! Te voy a responder a la brevedad.",
+        });
         setFormData({
           name: "",
           email: "",
           mensaje: "",
         });
       } else {
-        alert(
-          "Hubo un problema al enviar el mensaje. Por favor, inténtalo de nuevo."
-        );
+        setToast({
+          type: "error",
+          message: "Hubo un problema al enviar el mensaje. Probá de nuevo.",
+        });
       }
     } catch (error) {
       console.error("Error al enviar el mensaje:", error);
-      alert(
-        "Hubo un problema al enviar el mensaje. Por favor, inténtalo de nuevo."
-      );
+      setToast({
+        type: "error",
+        message: "Hubo un problema al enviar el mensaje. Probá de nuevo.",
+      });
     }
   };
 
   return (
-    <div className="contact-container" id="contact">
-      <h2>Contacto</h2>
-      <div className="contact-container form">
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label>
-              Nombre:
+    <section className="section white reveal" id="contact">
+      <div className="inner">
+        <div className="block-head">
+          <span className="idx">04</span>
+          <h2>Contacto</h2>
+        </div>
+        <div className="contact-grid">
+          <form onSubmit={handleSubmit}>
+            <div>
+              <label htmlFor="name">Nombre</label>
               <input
+                id="name"
                 type="text"
                 name="name"
+                placeholder="Tu nombre"
                 value={formData.name}
                 onChange={handleInputChange}
                 required
               />
-            </label>
-          </div>
-          <div>
-            <label>
-              Email:
+            </div>
+            <div>
+              <label htmlFor="email">Email</label>
               <input
+                id="email"
                 type="email"
                 name="email"
+                placeholder="tu@email.com"
                 value={formData.email}
                 onChange={handleInputChange}
                 required
               />
-            </label>
-          </div>
-          <div>
-            <label>
-              Mensaje:
+            </div>
+            <div>
+              <label htmlFor="msg">Mensaje</label>
               <textarea
+                id="msg"
                 name="mensaje"
+                placeholder="Contame sobre tu proyecto..."
                 value={formData.mensaje}
                 onChange={handleInputChange}
                 required
               />
-            </label>
+            </div>
+            <button type="submit" className="btn-submit">
+              Enviar mensaje
+            </button>
+          </form>
+          <div className="prose">
+            <p>
+              No dudes en conectarte conmigo. Estoy emocionada por lo que
+              depara el futuro en el mundo de la tecnología 🚀
+            </p>
+            <div className="properties" style={{ marginTop: "20px" }}>
+              <div className="prop-row">
+                <div className="prop-label">Email</div>
+                <div className="prop-value">
+                  <a href="mailto:vikicanclini@gmail.com">
+                    vikicanclini@gmail.com
+                  </a>
+                </div>
+              </div>
+              <div className="prop-row">
+                <div className="prop-label">Ubicación</div>
+                <div className="prop-value">Buenos Aires, Argentina</div>
+              </div>
+              <div className="prop-row">
+                <div className="prop-label">Redes</div>
+                <div className="prop-value">
+                  <a
+                    href="https://www.linkedin.com/in/victoriacanclini"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    LinkedIn
+                  </a>{" "}
+                  ·{" "}
+                  <a
+                    href="https://github.com/VictoriaCanclini"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>{" "}
+                  ·{" "}
+                  <a
+                    href="https://www.instagram.com/victoria.canclini"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Instagram
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <button>Enviar</button>
-        </form>
+        </div>
       </div>
-      <p>
-        No dudes en conectarte conmigo a vikicanclini@gmail.com. Estoy
-        emocionada por lo que depara el futuro en el mundo de la tecnología! 🚀
-      </p>
 
-      <a href="mailto:vikicanclini@gmail.com">
-        <Email color="#c9a4e8" />
-      </a>
-      <div>
-        <Location color="#9b9c9d" />
-        Buenos Aires, Argentina
-      </div>
-    </div>
+      {toast && (
+        <div className={`toast toast-${toast.type}`} role="status">
+          <span>{toast.message}</span>
+          <button
+            className="toast-close"
+            onClick={() => setToast(null)}
+            aria-label="Cerrar notificación"
+          >
+            ×
+          </button>
+        </div>
+      )}
+    </section>
   );
 };
 

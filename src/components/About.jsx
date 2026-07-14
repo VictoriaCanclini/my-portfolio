@@ -1,40 +1,38 @@
-import Image from "next/image";
-
 const About = () => {
   return (
-    <div className="about-container" id="about">
-      <h2>Acerca de mí</h2>
-      <div className="flex-about">
-        <div className="about-text">
+    <section className="section band reveal" id="about">
+      <div className="inner">
+        <div className="block-head">
+          <span className="idx">01</span>
+          <h2>Sobre mí</h2>
+        </div>
+        <div className="prose">
           <p>
-            Inicialmente comencé mi carrera como Contadora pública, pero mi
-            búsqueda de desafíos y mi deseo de crecimiento profesional me
-            llevaron a descubrir el fascinante mundo de la tecnología. Mi camino
-            en el mundo de la programación comienza de manera autodidacta, para
-            luego, con el fin de acelerar mi curva de aprendizaje inicié un
-            coding bootcamp full stack en plataforma 5. 
-            Me motiva mucho desarrollar mis habilidades y crecer profesionalmente. Estoy en
-            constante búsqueda de oportunidades para colaborar con nuevos
-            equipos y adquirir experiencia en las últimas tecnologías, tengo
-            sólidas aptitudes para la resolución de problemas, trabajo en
-            equipo, planificación y cumplimiento de objetivos producto de mis
-            años de experiencia como auditora externa en una Big four.
-            Cada desafío es una oportunidad para aprender y estoy decidida a enfrentarlos con entusiasmo y
-            determinación.
+            Inicialmente comencé mi carrera como{" "}
+            <strong>Contadora pública</strong>, pero mi búsqueda de desafíos y
+            mi deseo de crecimiento profesional me llevaron a descubrir el
+            mundo de la tecnología. Empecé de manera autodidacta y, para
+            acelerar mi curva de aprendizaje, hice un coding bootcamp full
+            stack en Plataforma 5.
+          </p>
+          <p>
+            Me motiva desarrollar mis habilidades y crecer profesionalmente.
+            Busco constantemente oportunidades para colaborar con nuevos
+            equipos y adquirir experiencia en las últimas tecnologías,
+            apoyada en mis años como auditora externa en una Big Four:
+            resolución de problemas, trabajo en equipo, planificación y
+            cumplimiento de objetivos.
           </p>
         </div>
-        <div className="about-img">
-          <Image
-            src="/images/compu.jpeg"
-            className="profile-img"
-            width={300}
-            height={500}
-            alt="personal"
-            priority={true}
-          />
+        <div className="callout">
+          <span className="mark">&ldquo;</span>
+          <span>
+            Cada desafío es una oportunidad para aprender, y estoy decidida a
+            enfrentarlos con entusiasmo y determinación.
+          </span>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

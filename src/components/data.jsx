@@ -3,95 +3,82 @@ export const projectData = [
     id: 1,
     title: "Digital Money House",
     description:
-      "Billetera virtual mobile/web para depositar y transferir fondos de una cuenta a otra.\nTecnologías: HTML5 - CSS - JavaScript - React - Next.14 - Redux - Tailwind CSS - Figma.",
+      "Billetera virtual mobile/web para depositar y transferir fondos entre cuentas.",
+    tags: ["React", "Next.js", "Redux", "Tailwind"],
     demoLink: "https://digital-money-house-psi.vercel.app/",
-    imageSrc: "/images/Logo.png",
     gitHubLink: "https://github.com/VictoriaCanclini/digital-money-house",
   },
   {
     id: 2,
-    title: "STUDIO BY M",
+    title: "Studio by M",
     description:
-      "Aplicación mobile/web para la compra de cursos de UX/UI utilizando Mercado pago y PayPal.\nTecnologías: HTML5 - CSS - JavaScript - Node.js - Express - MongoDB - Mongoose - JWT - React - Next.js - Redux - Tailwind CSS - Mercado pago - PayPal - Figma - Trello.",
+      "App mobile/web para la compra de cursos de UX/UI con Mercado Pago y PayPal.",
+    tags: ["Node.js", "MongoDB", "React", "Next.js"],
     demoLink:
       "https://drive.google.com/file/d/1bZv23WhlXZ2N-GmYqR-RdRpUtDr1oo8C/view?usp=sharing",
-    imageSrc: "/images/Maca.png",
     gitHubLink: "https://github.com/flormartinez92/Studio-M-Client",
   },
   {
     id: 3,
-    title: "PORTFOLIO",
+    title: "Box Delivery",
     description:
-      "Mi Portfolio personal mobile/web donde conocerás un poco más de mí, aquí vas a encontrar mis proyectos y trabajos realizados en este último tiempo. Tecnologías: HTML5 - CSS puro - JavaScript - React - Next.js 14, en donde aplique el dark-mode con la librería de next-themes.",
-    demoLink: "",
-    imageSrc: "/images/compu.jpeg",
-    gitHubLink: "https://github.com/VictoriaCanclini/my-portfolio",
-  },
-  {
-    id: 4,
-    title: "BOX DELIVERY",
-    description:
-      "Aplicación mobile de una empresa de logística de última milla que tiene cientos de repartidores que al inicio del día reciben x cantidad de paquetes cada uno y que deberán ir repartiendo a lo largo de la jornada. Tecnologías: HTML5 - CSS - TypeScript - Node.js - Nest.js - MongoDB - Mongoose - React - Next.js - Redux - Tailwind CSS - Docker - AWS - GitHub Actions - Figma - Trello.",
+      "App mobile de logística de última milla para gestionar repartos diarios.",
+    tags: ["TypeScript", "Nest.js", "Docker", "AWS"],
     demoLink:
       "https://drive.google.com/file/d/1-JXRbz35e-1Ag4EnpI9rh4QFRqS7ecQj/view?usp=drive_link",
-    imageSrc: "/images/box.png",
     gitHubLink: "https://github.com/GermanCuevas/box-client",
   },
   {
-    id: 5,
-    title: "DEVBOOKS",
+    id: 4,
+    title: "DevBooks",
     description:
-      "Aplicación web para adquirir libros de programación y tecnología. \nTecnologías: HTML5 - CSS - JavaScript - Node.js - Express - PostgreSQL - Sequelize - React context - React - Material UI.",
+      "Tienda web para adquirir libros de programación y tecnología.",
+    tags: ["Node.js", "PostgreSQL", "Material UI"],
     demoLink:
       "https://drive.google.com/file/d/1FDTm-7SWD_wi25ZOmx9v69kt7FuxiKIe/view?usp=drive_link",
-    imageSrc: "/images/devBookLogo.png",
     gitHubLink: "https://github.com/Francisco-Villanueva/eccomerce-book",
   },
   {
-    id: 6,
+    id: 5,
     title: "TMDB",
     description:
-      "Aplicación web que contiene películas y series utilizando una API externa, donde se puede agregar y eliminar en una lista de favoritos las películas que son de tu interés.\nTecnologías: HTML5 - CSS - JavaScript - Node.js - Express - PostgreSQL - Sequelize - React context - React - Bulma CSS. ",
+      "App web de películas y series con API externa y lista de favoritos.",
+    tags: ["Node.js", "PostgreSQL", "React", "Bulma"],
     demoLink:
       "https://drive.google.com/file/d/1K529CsTpntmZiSXOqADjzd-m3IMDNiAp/view?usp=drive_link",
-    imageSrc: "/images/TMDB.png",
     gitHubLink: "https://github.com/VictoriaCanclini/26-checkpoint-TMDB",
   },
   {
-    id: 7,
+    id: 6,
     title: "Game of Life",
-    description:
-      "El Juego de la vida es un autómata celular y un juego de simulación diseñado por el matemático británico John Horton Conway en 1970. Consiste en un tablero cuadriculado donde cada celda puede estar viva o muerta, y evoluciona según un conjunto de reglas simples basadas en el estado de las celdas vecinas. \nTecnologías: HTML5 - CSS - JavaScript.",
+    description: "Autómata celular de Conway sobre un tablero interactivo.",
+    tags: ["HTML5", "CSS", "JavaScript"],
     demoLink: "https://sweet-sprite-506630.netlify.app",
-    imageSrc: "/images/juego-de-la-vida.png",
     gitHubLink:
       "https://github.com/VictoriaCanclini/04-Conway-s-Game-of-Life-WS",
   },
   {
-    id: 8,
+    id: 7,
     title: "Color Game",
-    description:
-      "Adiviná cual es el color correcto a través de su código RGB (red-green-blue).\nTecnologías: HTML5 - CSS - JavaScript.",
+    description: "Adiviná el color correcto a partir de su código RGB.",
+    tags: ["HTML5", "CSS", "JavaScript"],
     demoLink: "https://fascinating-baklava-ba8684.netlify.app",
-    imageSrc: "/images/color-game.png",
     gitHubLink: "https://github.com/VictoriaCanclini/color-game",
   },
   {
-    id: 9,
+    id: 8,
     title: "Weather Channel",
-    description:
-      "Descubrí el clima actual en cualquier ciudad del mundo ingresando su nombre.\nTecnologías: HTML5 - CSS - JavaScript.",
+    description: "Consultá el clima actual de cualquier ciudad del mundo.",
+    tags: ["HTML5", "CSS", "JavaScript"],
     demoLink: "https://poetic-daifuku-01a3a0.netlify.app",
-    imageSrc: "/images/weather-channel.png",
     gitHubLink: "https://github.com/VictoriaCanclini/weather-channel",
   },
   {
-    id: 10,
-    title: "To do List",
-    description:
-      "Aplicación para agregar, editar y eliminar una lista de tareas.\nTecnologías: HTML5 - CSS - JavaScript.",
+    id: 9,
+    title: "To Do List",
+    description: "Aplicación para agregar, editar y eliminar tareas.",
+    tags: ["HTML5", "CSS", "JavaScript"],
     demoLink: "https://loquacious-queijadas-56b057.netlify.app",
-    imageSrc: "/images/to-do-list.png",
     gitHubLink: "https://github.com/VictoriaCanclini/to-do-list",
   },
 ];

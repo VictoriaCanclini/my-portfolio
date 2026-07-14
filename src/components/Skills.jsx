@@ -1,4 +1,3 @@
-import React from "react";
 import {
   GitHub,
   ReactIcon,
@@ -17,95 +16,113 @@ import {
   TrelloIcon,
   SequelizeIcon,
   TSicon,
-} from "../common/icons";
+} from "@/common/icons";
 
 const Skills = () => {
   return (
-    <div className="skills-container" id="skills">
-      <h2>Habilidades</h2>
-      <div className="grid-skills">
-        <div className="skill-card global">
-          <HTMLIcon />
-          <p>HTML</p>
+    <section className="section white reveal" id="skills">
+      <div className="inner">
+        <div className="block-head">
+          <span className="idx">02</span>
+          <h2>Habilidades</h2>
         </div>
-        <div className="skill-card global">
-          <CSSicon />
-          <p>CSS</p>
+
+        <div className="skill-group">
+          <h4>Frontend</h4>
+          <div className="pill-row">
+            <span className="pill">
+              <HTMLIcon />
+              HTML
+            </span>
+            <span className="pill">
+              <CSSicon />
+              CSS
+            </span>
+            <span className="pill">
+              <JSicon />
+              JavaScript
+            </span>
+            <span className="pill">
+              <TSicon />
+              TypeScript
+            </span>
+            <span className="pill">
+              <ReactIcon color="#61DAFB" />
+              React
+            </span>
+            <span className="pill">
+              <NextIcon />
+              Next.js
+            </span>
+            <span className="pill">Vue.js</span>
+            <span className="pill">
+              <ReduxIcon />
+              Redux
+            </span>
+            <span className="pill">
+              <TailwindIcon />
+              Tailwind CSS
+            </span>
+          </div>
         </div>
-        <div className="skill-card global">
-          <JSicon />
-          <p>JavaScript</p>
+
+        <div className="skill-group">
+          <h4>Backend</h4>
+          <div className="pill-row">
+            <span className="pill">
+              <NodeIcon color="#339933" />
+              Node.js
+            </span>
+            <span className="pill">
+              <ExpressIcon />
+              Express
+            </span>
+            <span className="pill">PHP</span>
+          </div>
         </div>
-        <div className="skill-card global">
-          <TSicon />
-          <p>TypeScript</p>
+
+        <div className="skill-group">
+          <h4>Bases de datos</h4>
+          <div className="pill-row">
+            <span className="pill">
+              <PostgreSQLicon />
+              PostgreSQL
+            </span>
+            <span className="pill">
+              <SequelizeIcon />
+              Sequelize
+            </span>
+            <span className="pill">
+              <MongoDBicon />
+              MongoDB
+            </span>
+          </div>
         </div>
-        <div className="skill-card global">
-          <ReactIcon />
-          <p>React</p>
-        </div>
-        <div className="skill-card global">
-          <NextIcon />
-          <p>Next.js</p>
-        </div>
-        <div className="skill-card global">
-          <NodeIcon />
-          <p>Node.js</p>
-        </div>
-        <div className="skill-card global">
-          <ExpressIcon />
-          <p>Express</p>
-        </div>
-        <div className="skill-card global">
-          <PostgreSQLicon />
-          <p>PostgreSQL</p>
-        </div>
-        <div className="skill-card global">
-          <SequelizeIcon />
-          <p>Sequelize</p>
-        </div>
-        <div className="skill-card global">
-          <MongoDBicon />
-          <p>MongoDB</p>
-        </div>
-        <div className="skill-card global">
-          <ReduxIcon />
-          <p>Redux</p>
-        </div>
-        <div className="skill-card global">
-          <TailwindIcon />
-          <p>Tailwind CSS</p>
-        </div>
-        <div className="skill-card global">
-          <DockerIcon />
-          <p>Docker</p>
-        </div>
-        <div className="skill-card global">
-          <GitHub />
-          <p>GitHub</p>
-        </div>
-        <div className="skill-card global">
-          <PostmanIcon />
-          <p>Postman</p>
-        </div>
-        <div className="skill-card global">
-          <TrelloIcon />
-          <p>Trello</p>
-        </div>
-        <div className="skill-card global">
-          {/* <TrelloIcon /> */}
-          <p>PHP</p>
-        </div>
-        <div className="skill-card global">
-          {/* <TrelloIcon /> */}
-          <p>Vue.js</p>
-        </div>
-        <div className="skill-card global">
-          {/* <TrelloIcon /> */}
-          <p>AWS</p>
+
+        <div className="skill-group">
+          <h4>Herramientas &amp; Cloud</h4>
+          <div className="pill-row">
+            <span className="pill">
+              <DockerIcon />
+              Docker
+            </span>
+            <span className="pill">AWS</span>
+            <span className="pill">
+              <GitHub />
+              GitHub
+            </span>
+            <span className="pill">
+              <PostmanIcon />
+              Postman
+            </span>
+            <span className="pill">
+              <TrelloIcon />
+              Trello
+            </span>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,124 +1,66 @@
 "use client";
 
-import { Burguer, DownloadCV, Home } from "@/common/icons";
-import Link from "next/link";
-import "../styles/globals.css";
-import { useEffect, useState } from "react";
-import { ThemeSwitcher } from "./themeSwitcher";
+import { useState } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const checkWindowSize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    checkWindowSize();
-
-    window.addEventListener("resize", checkWindowSize);
-
-    return () => {
-      window.removeEventListener("resize", checkWindowSize);
-    };
-  }, []);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <>
-      {/* modo mobile */}
-      {isMobile ? (
-        <div className="nav-container-mobile">
-          <div className="logo">
-            <a href="#hero">
-              <span>
-                <Home />
-              </span>
-            </a>
-          </div>
-          <div className="cta-btn">
-            <div onClick={toggleMenu}>
-              <Burguer />
-            </div>
-          </div>
-          {isMenuOpen && (
-            <div className="menu-container">
-              <div className="vertical-list">
-                <ul>
-                  <li onClick={closeMenu}>
-                    <a href="#about">Acerca de mí</a>
-                  </li>
-                  <li onClick={closeMenu}>
-                    <a href="#skills">Habilidades</a>
-                  </li>
-                  <li onClick={closeMenu}>
-                    <a href="#projects">Proyectos</a>
-                  </li>
-                  <li onClick={closeMenu}>
-                    <a href="#contact">Contacto</a>
-                  </li>
-                  <a
-                    href="https://drive.google.com/file/d/1wdsXAlS6wqgK6z7EPYfAjiVtJZu78DAq/view?usp=sharing"
-                    target="_blank"
-                  >
-                    <li onClick={closeMenu}>
-                      <DownloadCV color="#c9a4e8" />
-                    </li>
-                  </a>
-                  <li onClick={closeMenu}>
-                    <ThemeSwitcher />
-                  </li>
-                </ul>
-              </div>
-            </div>
-          )}
+    <header className="navbar">
+      <div className="nav-inner">
+        <div className="nav-profile">
+          <a href="#hero">
+            <span className="nav-name nav-name-full">Victoria Canclini</span>
+            <span className="nav-name nav-name-short">VC</span>
+          </a>
         </div>
-      ) : (
-        // modo Escritorio
-        <div className="nav-container">
-          <div className="logo">
-            <a href="#hero">
-              <span>Victoria Canclini</span>
+
+        <ul className={`side-nav ${isMenuOpen ? "open" : ""}`}>
+          <li>
+            <a href="#about" onClick={closeMenu}>
+              <span className="dot"></span>Sobre mí
             </a>
-          </div>
-          <div className="horizontal-list logo">
-            <ul>
-              <li>
-                <a href="#about">Acerca de mí</a>
-              </li>
-              <li>
-                <a href="#skills">Habilidades</a>
-              </li>
-              <li>
-                <a href="#projects">Proyectos</a>
-              </li>
-              <li>
-                <a href="#contact">Contacto</a>
-              </li>
-              <a
-                href="https://drive.google.com/file/d/1wdsXAlS6wqgK6z7EPYfAjiVtJZu78DAq/view?usp=sharing"
-                target="_blank"
-              >
-                <li className="viki">
-                  <DownloadCV color="#c9a4e8" />
-                </li>
-              </a>
-              <li>
-                <ThemeSwitcher />
-              </li>
-            </ul>
-          </div>
+          </li>
+          <li>
+            <a href="#skills" onClick={closeMenu}>
+              <span className="dot"></span>Habilidades
+            </a>
+          </li>
+          <li>
+            <a href="#projects" onClick={closeMenu}>
+              <span className="dot"></span>Proyectos
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onClick={closeMenu}>
+              <span className="dot"></span>Contacto
+            </a>
+          </li>
+        </ul>
+
+        <div className="nav-right">
+          <a
+            className="side-cv"
+            href="https://drive.google.com/file/d/1wdsXAlS6wqgK6z7EPYfAjiVtJZu78DAq/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Descargar CV
+          </a>
+          <button
+            className="menu-toggle"
+            aria-label="Abrir menú"
+            onClick={() => setIsMenuOpen((open) => !open)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-      )}
-    </>
+      </div>
+    </header>
   );
 };
 
