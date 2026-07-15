@@ -18,7 +18,7 @@ const About = () => {
             Me motiva desarrollar mis habilidades y crecer profesionalmente.
             Busco constantemente oportunidades para colaborar con nuevos
             equipos y adquirir experiencia en las últimas tecnologías,
-            apoyada en mis años como auditora externa en una Big Four:
+            apoyada en mis años como auditora externa en una Big Four tengo habilidades en
             resolución de problemas, trabajo en equipo, planificación y
             cumplimiento de objetivos.
           </p>
