@@ -16,6 +16,10 @@ import {
   TrelloIcon,
   SequelizeIcon,
   TSicon,
+  ViteIcon,
+  SupabaseIcon,
+  VueIcon,
+  PHPIcon,
 } from "@/common/icons";
 
 const Skills = () => {
@@ -53,7 +57,14 @@ const Skills = () => {
               <NextIcon />
               Next.js
             </span>
-            <span className="pill">Vue.js</span>
+            <span className="pill">
+              <VueIcon />
+              Vue.js
+            </span>
+            <span className="pill">
+              <ViteIcon />
+              Vite
+            </span>
             <span className="pill">
               <ReduxIcon />
               Redux
@@ -76,7 +87,10 @@ const Skills = () => {
               <ExpressIcon />
               Express
             </span>
-            <span className="pill">PHP</span>
+            <span className="pill">
+              <PHPIcon />
+              PHP
+            </span>
           </div>
         </div>
 
@@ -94,6 +108,10 @@ const Skills = () => {
             <span className="pill">
               <MongoDBicon />
               MongoDB
+            </span>
+            <span className="pill">
+              <SupabaseIcon />
+              Supabase
             </span>
           </div>
         </div>
