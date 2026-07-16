@@ -16,6 +16,7 @@ import {
   TrelloIcon,
   SequelizeIcon,
   TSicon,
+  AWSIcon,
   ViteIcon,
   SupabaseIcon,
   VueIcon,
@@ -123,7 +124,10 @@ const Skills = () => {
               <DockerIcon />
               Docker
             </span>
-            <span className="pill">AWS</span>
+            <span className="pill">
+              <AWSIcon />
+              AWS
+            </span>
             <span className="pill">
               <GitHub />
               GitHub
