@@ -652,6 +652,10 @@ footer p {
 
 /* ---------------- responsive ---------------- */
 @media (max-width: 880px) {
+  .block-head {
+    justify-content: center;
+  }
+
   .nav-inner {
     padding: 0 20px;
     position: relative;
