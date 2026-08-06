@@ -76,7 +76,6 @@ const Contact = () => {
                 id="name"
                 type="text"
                 name="name"
-                placeholder="tu nombre"
                 value={formData.name}
                 onChange={handleInputChange}
                 required
@@ -88,7 +87,6 @@ const Contact = () => {
                 id="email"
                 type="email"
                 name="email"
-                placeholder="tu@email.com"
                 value={formData.email}
                 onChange={handleInputChange}
                 required
@@ -99,7 +97,6 @@ const Contact = () => {
               <textarea
                 id="msg"
                 name="mensaje"
-                placeholder="contame sobre tu proyecto"
                 value={formData.mensaje}
                 onChange={handleInputChange}
                 required

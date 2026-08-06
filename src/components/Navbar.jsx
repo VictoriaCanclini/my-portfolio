@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Download } from "@/common/icons";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -47,7 +48,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Descargar CV
+            <Download width="15" height="15" /> CV
           </a>
           <button
             className="menu-toggle"
