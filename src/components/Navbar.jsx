@@ -44,7 +44,7 @@ const Navbar = () => {
         <div className="nav-right">
           <a
             className="side-cv"
-            href="https://drive.google.com/file/d/1wdsXAlS6wqgK6z7EPYfAjiVtJZu78DAq/view?usp=sharing"
+            href="https://drive.google.com/file/d/1uUNPLuRH6aDrQhoaR9JJTVmwDcHVvZh2/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
